@@ -43,18 +43,22 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.188em 1.5em;
+    padding: 2.188em 2.5em;
     border-bottom: .25em solid var(--color-principal);
     background-color: var(--color-principal);
     position: fixed;
     z-index:100;
     color:#fff;   
 }
+.Header-marca{
+    height: 4.5em;
+    min-width: 24em;
 
-.Header-marcasvg{
-    height: 4em;
 }
-
+.Header-img{
+    width: 17em;
+    margin: auto 0em;
+}
 /*Menu*/
 #actual{
     background-color: #392562;
@@ -74,15 +78,16 @@ body{
 .Header-li{
     padding: 0em .5em;
     font-size:var(--text-size-menu);
-
+    transition: all 0.4s ease;
 }
 .Header-a{
-    padding: .15em .5em;
+    padding: .2em .5em;
 
 }
 .Header-li:hover{
     color: var(--color-secundario);
-    font-size: 1.65em;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
 }
 /*Botones*/
 .Header-btns{
@@ -291,46 +296,106 @@ display: block;
 .Servicios-img--pequeno{
     width: 7em;
 }
+/* Estilos del formulario */
+.Form {
+    width:90%;
+    margin: 0 auto;
+    padding: 5em 6em;
+    background-color: var(--color-secundario);
+    border-radius: 5em;
+    display: flex;
+    flex-wrap: wrap;
 
-
-/*valoraciones*/
-    .Valoraciones-cont{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    }
-    .Valoraciones-div{
-        width: 29em;
-        height: 14em;
-        border: .125em solid var(--color-principal);
-        margin: 1.25em;
-        border-radius: 2.5em;
-        
-    }
-    .Valoraciones-p{
-        width: 70%;
-        font-size: var(--text-size-destacado);
-        float: right;
-        padding: .625em;
-        margin-top: 12%;
-        overflow: auto;
-        max-height:8em;
-    }
-    .Valoraciones-svg{
-        border: 2px solid var(--color-principal);
-        border-top: none;
-        border-left: none;
-        border-radius: 2.375em  2.375em/ 2.375em 0em;
-        width: 5em;
-        height: 5em;
-        padding: .625em;
-        margin: 0em;
-    }
-    .Valoraciones-figure{
-        width: 5em;
-        float: left;
-    }
-
+}
+.Form-cont{
+    width: 45%;
+    margin: 1em;
+}
+.Form-label--100{
+    width: 100%;
+    display:flex;
+    align-items: baseline;
+}
+.Form-pagos--cont{
+    color: #ffffffa0;
+    margin-left: 2em;
+    height: 2em;
+    padding: .5em;
+    background-color: #ffffff14;
+    border-radius: .5em;
+    cursor: pointer;
+}
+.Form-option{
+    color:#000000;
+}
+.Form-label {
+    margin-bottom: 1em;
+    margin-top: 2.5em;
+    color: var(--blanco);
+    font-size: var(--text-size-destacado);
+}
+.Form-input, .Form-textarea {
+    width: 100%;
+    height: 2.8em;
+    padding: .6em;
+    margin-bottom: .6em;
+    border-bottom: .15em solid #ffffff;
+    background-color: #ffffff14;
+    border-radius: .5em;
+    color: var(--blanco);
+    font-size: var(--text-size-cuerpo);
+    outline: none;
+}
+.Form-input:focus {
+    border-color: var(--color-principal);
+}
+.Form-textarea{
+    
+    float: right;
+}
+.Form-enviar {
+    float: right;
+    display: block;
+    width: 5em;
+    height: 2.5em;
+    margin-top: 1.1em;
+    border: none;
+    border-radius: 5em;
+    background-color: var(--color-principal);
+    color: var(--blanco);
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Form-enviar:hover {
+    transform: scale(1.1);
+}.Form-input--check {
+    display: none;
+    cursor: pointer;
+}
+.Form-input--check + label {
+    display: flex;
+    align-items: center;
+    
+}
+.Form-input--check + label:before {
+    content: '';
+    display: inline-block;
+    width: .75em;
+    height: .75em;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: .2em solid #ccc;
+    background-color: #ccc;
+}
+.Form-input--check:checked + label:before {
+    background-color: var(--color-principal);
+}
+.Form-label--textcheck {
+    margin: -.4em 0em;
+    margin-left: 4em;
+    font-size: 16px;
+}
 /* Footer-pie de página */
 .Footer{
     width: 100%;
@@ -445,7 +510,7 @@ display: block;
         width: 13.7em;
         min-height: 26.6em;
         background-color: var(--color-principal);
-        padding:2.5em .6em 4.35em .6em;
+        padding:2em .6em 8.35em .6em;
     }
 
     .Header-nav.active {
