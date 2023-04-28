@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="13" viewBox="0 0 24 13">
+  <g id="espapñol" transform="translate(-1794 -82)">
+    <g id="Rectángulo_7" data-name="Rectángulo 7" transform="translate(1794 82)" fill="#fff700" stroke="rgba(255,255,255,0)" stroke-width="0.5">
+      <rect width="24" height="13" stroke="none"/>
+      <rect x="0.25" y="0.25" width="23.5" height="12.5" fill="none"/>
+    </g>
+    <g id="Rectángulo_8" data-name="Rectángulo 8" transform="translate(1794 82)" fill="red" stroke="rgba(255,255,255,0)" stroke-width="0.5">
+      <rect width="24" height="4" stroke="none"/>
+      <rect x="0.25" y="0.25" width="23.5" height="3.5" fill="none"/>
+    </g>
+    <g id="Rectángulo_9" data-name="Rectángulo 9" transform="translate(1794 91)" fill="red" stroke="rgba(0,0,0,0)" stroke-width="0.5">
+      <rect width="24" height="4" stroke="none"/>
+      <rect x="0.25" y="0.25" width="23.5" height="3.5" fill="none"/>
+    </g>
+  </g>
+</svg>

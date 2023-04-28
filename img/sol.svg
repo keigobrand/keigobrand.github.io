@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.955" height="16.955" viewBox="0 0 16.955 16.955">
+  <g id="Grupo_1" data-name="Grupo 1" transform="translate(-1759 -78)">
+    <g id="Elipse_4" data-name="Elipse 4" transform="translate(1762 81)" fill="#00a263" stroke="#00a263" stroke-width="1">
+      <circle cx="5.5" cy="5.5" r="5.5" stroke="none"/>
+      <circle cx="5.5" cy="5.5" r="5" fill="none"/>
+    </g>
+    <line id="Línea_3" data-name="Línea 3" x1="2.279" y1="2.279" transform="translate(1771.656 89.137)" fill="none" stroke="#00a263" stroke-linecap="round" stroke-width="1"/>
+    <line id="Línea_4" data-name="Línea 4" x1="2.279" y1="2.279" transform="translate(1761.779 80.02)" fill="none" stroke="#00a263" stroke-linecap="round" stroke-width="1"/>
+    <line id="Línea_8" data-name="Línea 8" y1="2.279" x2="2.279" transform="translate(1771.656 80.779)" fill="none" stroke="#00a263" stroke-linecap="round" stroke-width="1"/>
+    <line id="Línea_5" data-name="Línea 5" x1="3.039" transform="translate(1759.5 86.098)" fill="none" stroke="#00a263" stroke-linecap="round" stroke-width="1"/>
+    <line id="Línea_7" data-name="Línea 7" x1="3.039" transform="translate(1772.416 86.098)" fill="none" stroke="#00a263" stroke-linecap="round" stroke-width="1"/>
+    <line id="Línea_6" data-name="Línea 6" y1="3.039" transform="translate(1767.857 78.5)" fill="none" stroke="#00a263" stroke-linecap="round" stroke-width="1"/>
+    <line id="Línea_9" data-name="Línea 9" y1="2.279" x2="2.279" transform="translate(1761.02 89.897)" fill="none" stroke="#00a263" stroke-linecap="round" stroke-width="1"/>
+    <line id="Línea_10" data-name="Línea 10" y1="3.039" transform="translate(1767.857 91.416)" fill="none" stroke="#00a263" stroke-linecap="round" stroke-width="1"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.208" height="37.136" viewBox="0 0 20.208 37.136">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00a263;
+        stroke: rgba(36,36,36,0);
+      }
+    </style>
+  </defs>
+  <g id="facebook" transform="translate(0.5 0.5)">
+    <path id="Trazado_102" data-name="Trazado 102" class="cls-1" d="M838.036,532.656l1-6.489H832.8v-4.213c0-1.776.871-3.507,3.659-3.507H839.3v-5.525a34.469,34.469,0,0,0-5.026-.439c-5.129,0-8.481,3.108-8.481,8.736v4.947h-5.7v6.489h5.7v15.69a22.7,22.7,0,0,0,7.016,0v-15.69Z" transform="translate(-820.087 -512.483)"/>
+  </g>
+</svg>
