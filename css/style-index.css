@@ -43,18 +43,22 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.188em 1.5em;
+    padding: 2.188em 2.5em;
     border-bottom: .25em solid var(--color-principal);
     background-color: var(--color-principal);
     position: fixed;
     z-index:100;
     color:#fff;   
 }
+.Header-marca{
+    height: 4.5em;
+    min-width: 24em;
 
-.Header-marcasvg{
-    height: 4em;
 }
-
+.Header-img{
+    width: 17em;
+    margin: auto 0em;
+}
 /*Menu*/
 #actual{
     background-color: #392562;
@@ -74,15 +78,16 @@ body{
 .Header-li{
     padding: 0em .5em;
     font-size:var(--text-size-menu);
-
+    transition: all 0.4s ease;
 }
 .Header-a{
-    padding: .15em .5em;
+    padding: .2em .5em;
 
 }
 .Header-li:hover{
     color: var(--color-secundario);
-    font-size: 1.65em;
+    transform: scale(1.2);
+    transition: all 0.3s ease;
 }
 /*Botones*/
 .Header-btns{
@@ -368,8 +373,8 @@ display: block;
 
 }*/
 
-/*responsive-adaptacion a dispositivos 1425px*/
-@media screen and (min-width:178px) {
+/*responsive-adaptacion a dispositivos*/
+@media screen and (min-width:1425px) {
         /*stilos barra scrol interna*/
         .Valoraciones-p::-webkit-scrollbar {
             appearance: none;
@@ -456,7 +461,7 @@ display: block;
         width: 13.7em;
         min-height: 26.6em;
         background-color: var(--color-principal);
-        padding:2.5em .6em 4.35em .6em;
+        padding:2em .6em 8.35em .6em;
     }
 
     .Header-nav.active {
@@ -571,6 +576,9 @@ display: block;
     }
     #actual.verde{
         background-color: #00A263;
+    }
+    #actual.verde:hover{
+        background-color: transparent;
     }
     #lupa.verde{
         color: var(--color-principal);

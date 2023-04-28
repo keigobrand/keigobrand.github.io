@@ -1,4 +1,4 @@
-// Boton despelegar menu
+/* Boton despelegar menu*/
 document.querySelector(".Header-btn").addEventListener("click", animateBars);
 
 var line1__bars = document.querySelector(".Header-line1");

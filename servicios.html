@@ -17,8 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
 
     <!--link scripts-->
-    <script defer src="js/dark-modt.js"></script>
-    <script defer src="js/scriptst.js"></script>
+    <script defer src="js/dark-mod.js"></script>
+    <script defer src="js/scripts.js"></script>
 
     <!-- Google analiticks -->
     <!--[if IE]>
@@ -32,9 +32,7 @@
 <body>
     <header id="header" class="Header">
             <a class="Header-marca" href="#inicio"> 
-                <svg class="Header-marcasvg">
-                    <use xlink:href="img/keigobrand-marca.svg#marca"></use>
-                </svg>
+                <img class="Header-img" src="img/keigobrand-marca.svg"></img>
             </a>
         <nav class="Header-nav">
             <ul class="Header-ul">
@@ -113,42 +111,56 @@
         <hr class="Main-separador">
     <section class="Section Formulario">
         <h2 class="Section-h2">Formulario</h2>
-        <div class="Form-cont">
-            <form class="Form" id="form" action="https://formspree.io/f/mdovkope" method="POST">
-					
+        <form class="Form" id="form" action="https://formspree.io/f/mdovkope" method="POST">
+            <fieldset class="Form-cont">
                 <label class="Form-label" for="">Nombre<abbr class="Form-obligatorio" title="required" aria-label="required">*</abbr></label>
-                <input class="Form-input" type="text" name="Name" placeholder="Nombre*" required>
-                <label class="Form-label" for="">Teléfono</label>
-                <input class="Form-input" type="number" name="Telefono" placeholder="Teléfono">
+                <input class="Form-input" type="text" name="Name" required>
                 <label class="Form-label" for="">Email<abbr class="obligatorio" title="required" aria-label="required">*</abbr></label>
-                <input class="Form-input" type="email" name="Email" placeholder="Correo electronico" required>
-                <label class="Form-label" for="">Dirección</label>
-                <input class="Form-input" type="text" name="Direccion" placeholder="Dirección">
+                <input class="Form-input" type="email" name="Email" required>
+                <label class="Form-label" for="">Teléfono</label>
+                <input class="Form-input" type="number" name="Telefono" >
+                
+            </fieldset>
+            <fieldset class="Form-cont">
                 <label class="Form-label" for="">Nombre de empresa<abbr class="obligatorio" title="required" aria-label="required">*</abbr></label>
-                <input class="Form-input" type="text" name="Nombre-empresa" placeholder="Nombre de empresa" required>
+                <input class="Form-input" type="text" name="Nombre-empresa" required>
+                <label class="Form-label" for="">Dirección</label>
+                <input class="Form-input" type="text" name="Direccion" >
                 <label class="Form-label" for="">Código postal</label>
-                <input class="Form-input" type="number" name="codigo-postal" placeholder="Código postal">
-                <label class="Form-label" for="">Metodo de pago</label>
-                <select id="opciones" name="metodo-pago" placeholder="Metodo de pago">
-                    <option value="" selected>Metodo de pago</option>
-                    <option value="opcion1">Transferencia bancaria</option>
-                    <option value="opcion2">Targeta</option>
-                    <option value="opcion3">Paypal</option>
+                <input class="Form-input" type="number" name="codigo-postal" >
+            </fieldset>
+            <fieldset class="Form-label--100">
+            <label class="Form-label " for="">Metodo de pago</label>
+                <select class="Form-pagos--cont id="opciones" name="metodo-pago">
+                    <option class="Form-option" value="" selected>Selecionar metodo de pago</option>
+                    <option class="Form-option" value="Transferencia-bancaria">Transferencia bancaria</option>
+                    <option class="Form-option" value="Targeta">Targeta</option>
+                    <option class="Form-option" value="Paypal">Paypal</option>
                 </select>
-                <label class="Form-label" for="">Servicios</label>
-                <input class="Form-input Form-input--check" type="checkbox" name="Pack-branding" placeholder="Pack branding">
-                <input class="Form-input Form-input--check" type="checkbox" name="Diseño-marca" placeholder="Diseño de marca">
-                <input class="Form-input Form-input--check" type="checkbox" name="Manual-imgagen-corporativa" placeholder="Manual imgagen corporativa">
-                <input class="Form-input Form-input--check" type="checkbox" name="Packaging" placeholder="Packaging">
-                <input class="Form-input Form-input--check" type="checkbox" name="Merchandising" placeholder="Merchandising">
-                <input class="Form-input Form-input--check" type="checkbox" name="Desarrollo-web" placeholder="Desarrollo web">
-                <input class="Form-input Form-input--check" type="checkbox" name="Desarrollo-app" placeholder="Desarrollo app">
-                <textarea></textarea>
+            </fieldset>
+                <label class="Form-label Form-label--100" for="">Servicios:</label>
+                <div class="Form-checkcont">
+                    <input class="Form-input--check Form-input" type="checkbox" id="pack-branding" name="pack-branding" value="pack-branding" required>
+                    <label class="Form-label Form-label--textcheck" for="pack-branding">Pack branding</label><br>
+                    <input class="Form-input--check Form-input" type="checkbox" id="diseño-marca" name="diseño-marca" value="diseño-marca" required>
+                    <label class="Form-label Form-label--textcheck" for="diseño-marca">Diseño de marca</label><br>
+                    <input class="Form-input--check Form-input" type="checkbox" id="manual-corporativo" name="manual-corporativo" value="manual-corporativo" required>
+                    <label class="Form-label Form-label--textcheck" for="manual-corporativo">Manual de imagen corporativa</label><br>
+                    <input class="Form-input--check Form-input" type="checkbox" id="desarrollo-web" name="desarrollo-web" value="desarrollo-web" required>
+                    <label class="Form-label Form-label--textcheck" for="desarrollo-web">Desarrollo web</label><br>
+                    <input class="Form-input--check Form-input" type="checkbox" id="desarrollo-app" name="desarrollo-app" value="desarrollo-app" required>
+                    <label class="Form-label Form-label--textcheck" for="desarrollo-app">Desarrollo app</label><br>
+                    <input class="Form-input--check Form-input" type="checkbox" id="packaging" name="packaging" value="packaging" required>
+                    <label class="Form-label Form-label--textcheck" for="packaging">Packaging</label><br>
+                    <input class="Form-input--check Form-input" type="checkbox" id="merchandasing" name="merchandasing" value="merchandasing" required>
+                    <label class="Form-label Form-label--textcheck" for="merchandasing">Merchandasing</label><br>
+                </div>
+                <label class="Form-label" for="">Descripción</label>
+                <textarea class="Form-textarea"></textarea>
                 <input class="Form-input" type="file" name="Subir-archivo" placeholder="Subir archivo">
                 <input class="Form-enviar" id="enviar" type="submit" value="Enviar">
-
+            
         </form>
-        </div>
     </section>
     </div>
     </main>
