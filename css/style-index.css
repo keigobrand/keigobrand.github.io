@@ -17,8 +17,8 @@ body{
     --color-text: #4d4d4d;
     --color-principal: #00A263;
     --color-secundario:#36195d;
-    --color-darkmod: #48126d;
-    --color-secundario-opacidad: #49126dea;
+    --color-darkmod: #36195d;
+    --color-secundario-opacidad: #36195dea;
     --blanco:#ffffff;
     --blanco-opacidad:#ffffffea;
     --color-sombra:#573EFF;
@@ -356,6 +356,7 @@ display: block;
     padding: 2.18em 2.5em;
     background-color: #ffffff;
     z-index: 8;
+    margin-top: 6em;
 }
 .Footer-links{
     display: flex;
@@ -583,7 +584,7 @@ display: block;
     #lupa.verde{
         color: var(--color-principal);
     }
-    #content.dark{
+    #content.dark1{
         background-color: var(--color-secundario-opacidad);
     }
     #isotipo.dark>.st0{

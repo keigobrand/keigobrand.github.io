@@ -287,246 +287,43 @@ body {
 .Section-h4 {
     font-size: var(--size-subapartado);
 }
-
-/* Sección servicios */
-.Servicios-cont {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.Servicios-div {
-    width: 17.18em;
-    height: 17.18em;
-    margin: 1.87em .62em;
-    border: .125em solid var(--color-principal);
-    border-radius: 2.5em;
-    cursor: pointer;
-    overflow: hidden;
-    background-color: var(--color-secundario);
-    display: flex;
-    flex-direction: column;
+/*Estilos sobre mi*/
+.Sobremi{
+    padding: 0em 5em;
+    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    padding-top: 2em;
 }
-
-.Servicios-h3 {
-    margin-top: 1.5em;
-    color: var(--blanco);
-    font-weight: 600;
-    font-size: var(--text-size-destacado);
-    text-align: center;
-    white-space: nowrap;
+.Sobremi-p{
+    width: 50%;
 }
-
-.Servicios-imgcont {
-    min-height: 9em;
-    display: flex;
-}
-
-.Servicios-img {
-    width: 9em;
-    margin: auto;
-
-}
-
-.Servicios-img--pequeno {
-    width: 7em;
-}
-/*Popups servicios*/
-.Popup{
-    position: fixed;
-    width: 65%;
-    background-color: var(--blanco-opacidad);
-    border-radius: 6em;
-    display: none;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: 4em;
-    z-index: 80;
-
-}
-.Popup-div{
-    margin: 5em auto;
-    padding:5em 3.5em;
-    max-width: 25em;
-    height: 30em;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: var(--blanco);
-    border-radius: 4em;
-    box-shadow: var(--color-principal) 1em 1em .9em;
-}
-.Popup-h2{
-    font-size: var(--text-size-menu);
-    color:var(--color-secundario);
-    text-align: center;
-    white-space: wrap;
-
-}
-.Popup-hr{
-    margin: 2em 0em 3em;
-    color: var(--color-principal);
-    height: .5em;
-    background-color: var(--color-principal);
-    height: .188em;
-    width: 80%;
-    border-radius: 1em;
-}
-.Popup-cerrar{
-    position: relative;
-    left: 50%;
-    bottom: -3em;
-    font-weight: 600;
-    font-size: x-large;
-    color: var(--color-principal);
-    cursor: pointer;
-}
-.Popup-cerrar:hover{
-    text-shadow: var(--color-principal) .1em .1em .2em;
-}
-/* Estilos del formulario */
-.Form {
-    width: 90%;
-    margin: 0 auto;
-    padding: 5em 6em;
-    background-color: var(--color-secundario);
-    border-radius: 5em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-.Form-cont {
-    width: 45%;
-    margin: 0em 1em;
-}
-
-.Form-pagos--cont {
-    color: #ffffffa0;
-    margin-left: 2em;
-    height: 2em;
-    padding: .5em;
-    background-color: #ffffff14;
-    border-radius: .5em;
-    cursor: pointer;
-}
-
-.Form-option {
-    color: #000000;
-}
-
-.Form-label {
-    margin-bottom: .5em;
-    margin-top: 1.5em;
-    color: var(--blanco);
-    font-size: var(--text-size-cuerpo);
-}
-
-.Form-input--subir {
-    color: var(--color-principal);
-    cursor: pointer;
-    margin: 8em 0em 0em;
-}
-
-.Form-cont--end {
-    width: 100%;
-}
-
-.Form-input,
-.Form-textarea {
-    width: 100%;
-    height: 2.2em;
-    padding: .6em;
-    margin-bottom: .6em;
-    border-bottom: .15em solid #ffffff;
-    background-color: #ffffff14;
-    border-radius: .5em;
-    color: var(--blanco);
-    font-size: var(--text-size-cuerpo);
-    outline: none;
-}
-
-.Form-input:focus {
-    border-color: var(--color-principal);
-}
-
-.Form-textarea {
-    width: 85%;
-    height: 6em;
+.Sobremi-img{
     float: right;
+    height: 20em;
+    width: auto;
+    border: solid .25em var(--color-principal);
+    border-radius: 8em 0em;
 }
 
-.Form-enviar {
-    float: right;
+/*Estilos boton*/
+
+.Portfolio-btn {
     display: block;
-    width: 5em;
+    width: 8em;
     height: 2.5em;
-    margin-top: 1.1em;
     border: none;
     border-radius: 1em;
     background-color: var(--color-principal);
     color: var(--blanco);
     font-size: 1.5em;
     font-weight: 500;
-    cursor: pointer;
+    text-align: center;
+    padding-top: .75em;
 }
 
-.Form-enviar:hover {
+.Portfolio-btn:hover {
     transform: scale(1.1);
 }
-
-.Form-input--check {
-    display: none;
-    cursor: pointer;
-}
-
-.Form-input--check+label {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-
-}
-
-.Form-input--check+label:before {
-    content: '';
-    display: inline-block;
-    width: .75em;
-    height: .75em;
-    margin-right: 10px;
-    border-radius: 50%;
-    border: .2em solid #ccc;
-    background-color: #ccc;
-    transform: scale(0.8);
-}
-
-.Form-input--check:checked+label:before {
-    background-color: var(--color-principal);
-}
-
-.Form-label--textcheck {
-    margin: .4em 0em;
-    margin-left: 4em;
-    font-size: 16px;
-}
-
-.Form-checkcont {
-    display: flex;
-    flex-wrap: wrap;
-    column-count: 3;
-    column-gap: .5em;
-
-}
-
-.Form-label--textcheck {
-    flex-basis: 35%;
-}
-
 /* Footer-pie de página */
 .Footer {
     width: 100%;
@@ -573,20 +370,14 @@ body {
     .Contenedor {
         width: 90%;
         padding: 2em 5em;
-        ;
     }
-    .Form-checkcont {
-        column-count: 2;
-        column-gap: .3em;
+    .Sobremi{
+        width: 90%;
+        justify-content: center;
+        padding: 1em;
     }
-    .Form-label--textcheck {
-        flex-basis: 45%;
-        margin-left: 1em;
-    }
-
-    .Form-cont, .Form-cont--end, .Form-textarea, .Form-input--subir{
-        width: 100%;
-        margin-left:0em ;
+    .Sobremi-img{
+        margin-left: 5em;
     }
     /*menu responsive*/
     .Header-btn {
@@ -669,7 +460,6 @@ body {
         display: block;
     }
 }
-
 @media screen and (max-width:767px) {
     .Header-marca {
         width: 12em;
@@ -685,51 +475,26 @@ body {
     }
 
     .Contenedor {
-        width: 100%;
+        width: 95%;
         padding: .5em 3em;
     }
-
     .Section {
         width: 100%;
     }
-    .Popup{
+    .Sobremi{
         width: 100%;
-        height: 100vh;
-        padding-top: 7em;
-    }
-    .Popup-div{
-        width: 90%;
-        padding: 4em 2em;
-    }
-    .Popup-cerrar{
-        left: 45%;
-        bottom: -3em;
-    }
-    .Form{
-        flex-direction: column;
-        justify-content: flex-start;
+        flex-direction: column-reverse;
+        justify-content: center;
         padding: 1em;
-        width: 100%;
-        border-radius: 3em;
     }
-    .Form-checkcont {
-        column-count: 1;
+    .Sobremi-img{
+        height: 15em;
+        margin-bottom: 3em;
+        border-radius: 6em 0em;
     }
-    .Form-label--textcheck {
-        flex-basis: 100%;
-        margin: .5em 0em;
-        margin-left: .5em;
-        
-    }
-    .Form-pagos--cont{
-        margin-left: .5em;
-    }
-    .Form-cont, .Form-cont--end, .Form-textarea, .Form-input--subir{
-        width: 100%;
-        margin-left:0em ;
-    }
-    .Form-enviar{
-        margin: 1.5em 0em;
+    .Sobremi-p{
+        width: 98%;
+        text-align: justify;
     }
     .Footer {
         flex-direction: column-reverse;
@@ -744,7 +509,6 @@ body {
         text-align: center;
         justify-content: space-around;
     }
-
     .Footer-a {
         margin: 0em .5em;
 
@@ -794,27 +558,4 @@ body {
         float: right;
     }
 
-    /*contenido*/
-
-    #Servicios.dark>.Servicios-div{
-        background-color: var(--color-principal);
-    }
-    #form.dark{
-        background-color: var(--color-principal);
-    }
-    #enviar.dark{
-        background-color: var(--color-secundario);
-    }
-    #input-subir.dark{
-        color:var(--color-secundario)
-    }
-    #content>.Popup{
-        background-color: var(--color-secundario-opacidad);
-    }
-    #content>.Popup>.Popup-div{
-        background-color: var(--color-secundario);
-    }
-    #content>.Popup>.Popup-div>.Popup-h2{
-        color: var(--blanco);
-    }
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Title" content="Keigobrand">
-    <meta name="description"content="branding; desing of branding; marca; diseño de marca; desarrollo web; diseño web; diseño app; desarrollo app;">
+    <meta name="description" content="branding; desing of branding; marca; diseño de marca; desarrollo web; diseño web; diseño app; desarrollo app;">
     <title>Keigobrand</title>
 
     <!-- conesión css -->
@@ -17,8 +17,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
 
     <!--link scripts-->
-    <script defer src="js/dark-mod.js"></script>
-    <script defer src="js/scripts.js"></script>
+    <script defer src="js/scripts-servicios.js"></script>
+    <script defer src="js/scripts-menu.js"></script>
 
     <!-- Google analiticks -->
     <!--[if IE]>
@@ -31,8 +31,8 @@
 
 <body>
     <header id="header" class="Header">
-            <a class="Header-marca" href="#inicio"> 
-                <img class="Header-img" src="img/keigobrand-marca.svg"></img>
+            <a class="Header-marca" href="index.html"> 
+                <img class="Header-img" src="img/keigobrand-marca.svg">
             </a>
         <nav class="Header-nav">
             <ul class="Header-ul">
@@ -79,90 +79,142 @@
     
     <main id="main" class="Main">
         <div id="content" class="Contenedor">
-        <h1 class="Main-h1">Servicios</h1>
-        <section id="proyectos" class="Section Servicios">
-        <div class="Servicios-cont">
-            <div class="Servicios-div">
-				<div class="Servicios-imgcont"><img class="Servicios-img" src="img/pack-branding.svg" alt=""></div>
-                <h3 class="Servicios-h3">Pack branding</h3>
-            </div>
-			<div class="Servicios-div">
-				<div class="Servicios-imgcont"><img class="Servicios-img Servicios-img--pequeno" src="img/Diseño-de-marca.svg" alt=""></div>
-                <h3 class="Servicios-h3">Diseño de marca</h3>
-            </div>
-			<div class="Servicios-div">
-				<div class="Servicios-imgcont"><img class="Servicios-img" src="img/manual--imagen-corporativa.svg" alt=""></div>
-                <h3 class="Servicios-h3">Manual de imagen <br> corporativo</h3>
-            </div>
-			<div class="Servicios-div">
-				<div class="Servicios-imgcont"><img class="Servicios-img" src="img/desarrollo-web y app.svg" alt=""></div>
-                <h3 class="Servicios-h3">Desarrollo web y app</h3>
-            </div>
-			<div class="Servicios-div">
-				<div class="Servicios-imgcont"><img class="Servicios-img Servicios-img--pequeno" src="img/packaging.svg" alt=""></div>
-                <h3 class="Servicios-h3">Packaging</h3>
-            </div>
-			<div class="Servicios-div">
-				<div class="Servicios-imgcont"><img class="Servicios-img " src="img/merchandasing.svg" alt=""></div>
-                <h3 class="Servicios-h3">Merchandasing</h3>
-            </div>
-        </div>
-        </section>
-        <hr class="Main-separador">
-    <section class="Section Formulario">
-        <h2 class="Section-h2">Formulario</h2>
-        <form class="Form" id="form" action="https://formspree.io/f/mdovkope" method="POST">
-            <fieldset class="Form-cont">
-                <label class="Form-label" for="">Nombre<abbr class="Form-obligatorio" title="required" aria-label="required">*</abbr></label>
-                <input class="Form-input" type="text" name="Name" required>
-                <label class="Form-label" for="">Email<abbr class="obligatorio" title="required" aria-label="required">*</abbr></label>
-                <input class="Form-input" type="email" name="Email" required>
-                <label class="Form-label" for="">Teléfono</label>
-                <input class="Form-input" type="number" name="Telefono" >
-                
-            </fieldset>
-            <fieldset class="Form-cont">
-                <label class="Form-label" for="">Nombre de empresa<abbr class="obligatorio" title="required" aria-label="required">*</abbr></label>
-                <input class="Form-input" type="text" name="Nombre-empresa" required>
-                <label class="Form-label" for="">Dirección</label>
-                <input class="Form-input" type="text" name="Direccion" >
-                <label class="Form-label" for="">Código postal</label>
-                <input class="Form-input" type="number" name="codigo-postal" >
-            </fieldset>
-            <fieldset class="Form-label--100">
-            <label class="Form-label " for="">Metodo de pago</label>
-                <select class="Form-pagos--cont id="opciones" name="metodo-pago">
-                    <option class="Form-option" value="" selected>Selecionar metodo de pago</option>
-                    <option class="Form-option" value="Transferencia-bancaria">Transferencia bancaria</option>
-                    <option class="Form-option" value="Targeta">Targeta</option>
-                    <option class="Form-option" value="Paypal">Paypal</option>
-                </select>
-            </fieldset>
-                <label class="Form-label Form-label--100" for="">Servicios:</label>
-                <div class="Form-checkcont">
-                    <input class="Form-input--check Form-input" type="checkbox" id="pack-branding" name="pack-branding" value="pack-branding" required>
-                    <label class="Form-label Form-label--textcheck" for="pack-branding">Pack branding</label><br>
-                    <input class="Form-input--check Form-input" type="checkbox" id="diseño-marca" name="diseño-marca" value="diseño-marca" required>
-                    <label class="Form-label Form-label--textcheck" for="diseño-marca">Diseño de marca</label><br>
-                    <input class="Form-input--check Form-input" type="checkbox" id="manual-corporativo" name="manual-corporativo" value="manual-corporativo" required>
-                    <label class="Form-label Form-label--textcheck" for="manual-corporativo">Manual de imagen corporativa</label><br>
-                    <input class="Form-input--check Form-input" type="checkbox" id="desarrollo-web" name="desarrollo-web" value="desarrollo-web" required>
-                    <label class="Form-label Form-label--textcheck" for="desarrollo-web">Desarrollo web</label><br>
-                    <input class="Form-input--check Form-input" type="checkbox" id="desarrollo-app" name="desarrollo-app" value="desarrollo-app" required>
-                    <label class="Form-label Form-label--textcheck" for="desarrollo-app">Desarrollo app</label><br>
-                    <input class="Form-input--check Form-input" type="checkbox" id="packaging" name="packaging" value="packaging" required>
-                    <label class="Form-label Form-label--textcheck" for="packaging">Packaging</label><br>
-                    <input class="Form-input--check Form-input" type="checkbox" id="merchandasing" name="merchandasing" value="merchandasing" required>
-                    <label class="Form-label Form-label--textcheck" for="merchandasing">Merchandasing</label><br>
+            <h1 class="Main-h1">Servicios</h1>
+            <section class="Section Servicios">
+                <div id="Servicios" class="Servicios-cont">
+                    <div id="pack-branding" class="Servicios-div abrir--popup">
+                        <div class="Servicios-imgcont"><img class="Servicios-img" src="img/pack-branding.svg" alt=""></div>
+                        <h3 class="Servicios-h3">Pack branding</h3>
+                    </div>
+                    <div id="diseno-marca" class="Servicios-div abrir--popup">
+                        <div class="Servicios-imgcont"><img class="Servicios-img Servicios-img--pequeno" src="img/Diseño-de-marca.svg" alt=""></div>
+                        <h3 class="Servicios-h3">Diseño de marca</h3>
+                    </div>
+                    <div id="manual-corporativo" class="Servicios-div abrir--popup">
+                        <div class="Servicios-imgcont"><img class="Servicios-img" src="img/manual--imagen-corporativa.svg" alt=""></div>
+                        <h3 class="Servicios-h3">Manual de imagen <br> corporativo</h3>
+                    </div>
+                    <div id="desarrollo" class="Servicios-div abrir--popup">
+                        <div class="Servicios-imgcont"><img class="Servicios-img" src="img/desarrollo-web y app.svg" alt=""></div>
+                        <h3 class="Servicios-h3">Desarrollo web y app</h3>
+                    </div>
+                    <div id="packaging" class="Servicios-div abrir--popup">
+                        <div class="Servicios-imgcont"><img class="Servicios-img Servicios-img--pequeno" src="img/packaging.svg" alt=""></div>
+                        <h3 class="Servicios-h3">Packaging</h3>
+                    </div>
+                    <div id="merchandasing" class="Servicios-div abrir--popup">
+                        <div class="Servicios-imgcont"><img class="Servicios-img " src="img/merchandasing.svg" alt=""></div>
+                        <h3 class="Servicios-h3">Merchandasing</h3>
+                    </div>
                 </div>
-                <label class="Form-label" for="">Descripción</label>
-                <textarea class="Form-textarea"></textarea>
-                <input class="Form-input" type="file" name="Subir-archivo" placeholder="Subir archivo">
-                <input class="Form-enviar" id="enviar" type="submit" value="Enviar">
+            </section>
+            <!--popus servicios-->
+            <section id="Popup1" class="Popup">
+                <div class="Popup-div">
+                    <h2 class="Popup-h2">Pack branding</h2>
+                    <hr class="Popup-hr">
+                    <p class="Popup-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatum nisi magni magnam dolorum assumenda possimus nesciunt quis alias iste ab hic, consequatur unde obcaecati a natus, vitae praesentium voluptatem.</p>
+                    <span class="Popup-cerrar">X</span>
+                </div>
+            </section>
+            <section id="Popup2" class="Popup">
+                <div class="Popup-div">
+                    <h2 class="Popup-h2">Diseño de marca</h2>
+                    <hr class="Popup-hr">
+                    <p class="Popup-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatum nisi magni magnam dolorum assumenda possimus nesciunt quis alias iste ab hic, consequatur unde obcaecati a natus, vitae praesentium voluptatem.</p>
+                    <span class="Popup-cerrar">X</span>
+                </div>
+            </section>
+            <section id="Popup3" class="Popup">
+                <div class="Popup-div">
+                    <h2 class="Popup-h2">Manual de imagen coporativa</h2>
+                    <hr class="Popup-hr">
+                    <p class="Popup-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatum nisi magni magnam dolorum assumenda possimus nesciunt quis alias iste ab hic, consequatur unde obcaecati a natus, vitae praesentium voluptatem.</p>
+                    <span class="Popup-cerrar">X</span>
+                </div>
+            </section>
+            <section id="Popup4" class="Popup">
+                <div class="Popup-div">
+                    <h2 class="Popup-h2">Desarrollo web y app</h2>
+                    <hr class="Popup-hr">
+                    <p class="Popup-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatum nisi magni magnam dolorum assumenda possimus nesciunt quis alias iste ab hic, consequatur unde obcaecati a natus, vitae praesentium voluptatem.</p>
+                    <span class="Popup-cerrar">X</span>
+                </div>
+            </section>
+            <section id="Popup5" class="Popup">
+                <div class="Popup-div">
+                    <h2 class="Popup-h2">Packaging</h2>
+                    <hr class="Popup-hr">
+                    <p class="Popup-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatum nisi magni magnam dolorum assumenda possimus nesciunt quis alias iste ab hic, consequatur unde obcaecati a natus, vitae praesentium voluptatem.</p>
+                    <span class="Popup-cerrar">X</span>
+                </div>
+            </section>
+            <section id="Popup6" class="Popup">
+                <div class="Popup-div">
+                    <h2 class="Popup-h2">Merchandasing</h2>
+                    <hr class="Popup-hr">
+                    <p class="Popup-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatum nisi magni magnam dolorum assumenda possimus nesciunt quis alias iste ab hic, consequatur unde obcaecati a natus, vitae praesentium voluptatem.</p>
+                    <span class="Popup-cerrar">X</span>
+                </div>
+            </section>
             
-        </form>
-    </section>
-    </div>
+            <hr class="Main-separador">
+            <section class="Section Formulario">
+                <h2 class="Section-h2">Formulario</h2>
+                <form class="Form" id="form" action="https://formspree.io/f/mdovkope" method="POST">
+                    <fieldset class="Form-cont">
+                        <label class="Form-label" for="">Nombre<abbr class="Form-obligatorio" title="required" aria-label="required">*</abbr></label>
+                        <input class="Form-input" type="text" name="Name" required>
+                        <label class="Form-label" for="">Email<abbr class="obligatorio" title="required" aria-label="required">*</abbr></label>
+                        <input class="Form-input" type="email" name="Email" required>
+                        <label class="Form-label" for="">Teléfono</label>
+                        <input class="Form-input" type="text" pattern="\d+" oninput="this.value=this.value.replace(/[^0-9]/g,'');" name="Telefono" >
+                        
+                    </fieldset>
+                    <fieldset class="Form-cont">
+                        <label class="Form-label" for="">Nombre de empresa<abbr class="obligatorio" title="required" aria-label="required">*</abbr></label>
+                        <input class="Form-input" type="text" name="Nombre-empresa" required>
+                        <label class="Form-label" for="">Dirección</label>
+                        <input class="Form-input" type="text" name="Direccion" >
+                        <label class="Form-label" for="">Código postal</label>
+                        <input class="Form-input" type="text" pattern="\d+" oninput="this.value=this.value.replace(/[^0-9]/g,'');" name="codigo-postal" >
+                    </fieldset>
+                    <fieldset class="Form-cont Form-cont--end">
+                    <label class="Form-label" for="">Metodo de pago</label>
+                        <select id="opciones" class="Form-pagos--cont" name="metodo-pago">
+                            <option class="Form-option" value="" selected>Selecionar metodo de pago</option>
+                            <option class="Form-option" value="Transferencia-bancaria">Transferencia bancaria</option>
+                            <option class="Form-option" value="Targeta">Targeta</option>
+                            <option class="Form-option" value="Paypal">Paypal</option>
+                        </select>
+                        <label class="Form-label Form-label--100" for="">Servicios:</label>
+                        <div class="Form-checkcont">
+                            <input class="Form-input--check Form-input" type="checkbox" id="input-pack-branding" name="pack-branding" value="pack-branding" required>
+                            <label class="Form-label Form-label--textcheck" for="input-pack-branding">Pack branding</label><br>
+                            <input class="Form-input--check Form-input" type="checkbox" id="input-diseño-marca" name="diseño-marca" value="diseño-marca" required>
+                            <label class="Form-label Form-label--textcheck" for="input-diseño-marca">Diseño de marca</label><br>
+                            <input class="Form-input--check Form-input" type="checkbox" id="input-manual-corporativo" name="manual-corporativo" value="manual-corporativo" required>
+                            <label class="Form-label Form-label--textcheck" for="input-manual-corporativo">Manual de imagen corporativa</label><br>
+                            <input class="Form-input--check Form-input" type="checkbox" id="input-desarrollo-web" name="desarrollo-web" value="desarrollo-web" required>
+                            <label class="Form-label Form-label--textcheck" for="input-desarrollo-web">Desarrollo web</label><br>
+                            <input class="Form-input--check Form-input" type="checkbox" id="input-desarrollo-app" name="desarrollo-app" value="desarrollo-app" required>
+                            <label class="Form-label Form-label--textcheck" for="input-desarrollo-app">Desarrollo app</label><br>
+                            <input class="Form-input--check Form-input" type="checkbox" id="input-packaging" name="packaging" value="packaging" required>
+                            <label class="Form-label Form-label--textcheck"  for="input-packaging">Packaging</label><br>
+                            <input class="Form-input--check Form-input" type="checkbox" id="input-merchandasing" name="merchandasing" value="merchandasing" required>
+                            <label class="Form-label Form-label--textcheck"  for="input-merchandasing">Merchandasing</label><br>
+                        </div>
+                    </fieldset>
+                    <fieldset class="Form-cont Form-cont--end">
+                        <label class="Form-label" for="">Descripción</label>
+                        <textarea class="Form-textarea"></textarea>
+                        <input id="input-subir" class="Form-input--subir" type="file" name="Subir-archivo" placeholder="Subir archivo" multiple>
+                        <input id="enviar" class="Form-enviar" type="submit" value="Enviar">
+                    </fieldset>
+                    
+                </form>
+            </section>
+        </div>
     </main>
     
     <footer id="footer" class="Footer">
@@ -171,9 +223,9 @@
             <small class="Footer-copy">&copy; Keigobrand 2023, derechos reservados</small>
         </div>
         <div class="Footer-links">
-            <a class="Footer-a" href="#">Politica de privacidad</a>
-            <a class="Footer-a" href="#">Politica de cookies</a>
-            <a class="Footer-a" href="#">Tratamiento de datos</a>
+            <a class="Footer-a" href="politica-privacidad.html">Politica de privacidad</a>
+            <a class="Footer-a" href="cookies.html">Politica de cookies</a>
+            <a class="Footer-a" href="tratamiento-datos.html">Tratamiento de datos</a>
         </div>
     </footer>
 </body>
