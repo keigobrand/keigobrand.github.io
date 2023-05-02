@@ -755,35 +755,35 @@ body {
 
 /*Modo oscuro*/
 @media (prefers-color-scheme: dark) {
-    body.dark {
+    body {
         background-color: var(--color-darkmod);
         color: #ffff;
     }
 
-    #header.dark,
-    #footer.dark {
+    #header,
+    #footer {
         color: #ffff;
         background-color: var(--color-darkmod);
     }
 
-    #content.dark1 {
+    #content {
         background-color: var(--color-secundario-opacidad);
     }
 
-    #header.dark>nav>ul>li>a:hover {
+    #header>nav>ul>li>a:hover {
         color: var(--color-principal);
     }
 
-    #actual.verde {
+    #actual {
         background-color: #00A263;
     }
 
-    #lupa.verde {
+    #lupa {
         color: var(--color-principal);
     }
 
     /*switch Dark-mod*/
-    #switch.dark {
+    #switch {
         border-color: var(--color-principal);
     }
 
@@ -798,25 +798,89 @@ body {
 
     /*contenido*/
 
-    #Servicios.dark>.Servicios-div{
+    #Servicios>.Servicios-div{
         background-color: var(--color-principal);
     }
-    #form.dark{
+    #form{
         background-color: var(--color-principal);
     }
-    #enviar.dark{
+    #enviar{
         background-color: var(--color-secundario);
     }
-    #input-subir.dark{
+    #input-subir{
         color:var(--color-secundario)
     }
-    #content.dark1>.Popup{
+    #content>.Popup{
         background-color: var(--color-secundario-opacidad);
     }
-    #content.dark1>.Popup>.Popup-div{
+    #content>.Popup>.Popup-div{
         background-color: var(--color-secundario);
     }
-    #content.dark1>.Popup>.Popup-div>.Popup-h2{
+    #content>.Popup>.Popup-div>.Popup-h2{
         color: var(--blanco);
     }
+}
+body.dark {
+    background-color: var(--color-darkmod);
+    color: #ffff;
+}
+
+#header.dark,
+#footer.dark {
+    color: #ffff;
+    background-color: var(--color-darkmod);
+}
+
+#content.dark1 {
+    background-color: var(--color-secundario-opacidad);
+}
+
+#header.dark>nav>ul>li>a:hover {
+    color: var(--color-principal);
+}
+
+#actual.verde {
+    background-color: #00A263;
+}
+
+#lupa.verde {
+    color: var(--color-principal);
+}
+
+/*switch Dark-mod*/
+#switch.dark {
+    border-color: var(--color-principal);
+}
+
+#luna.folse {
+    display: none;
+}
+
+#sol.active {
+    display: block;
+    float: right;
+}
+
+/*contenido*/
+
+#Servicios.dark>.Servicios-div{
+    background-color: var(--color-principal);
+}
+#form.dark{
+    background-color: var(--color-principal);
+}
+#enviar.dark{
+    background-color: var(--color-secundario);
+}
+#input-subir.dark{
+    color:var(--color-secundario)
+}
+#content.dark1>.Popup{
+    background-color: var(--color-secundario-opacidad);
+}
+#content.dark1>.Popup>.Popup-div{
+    background-color: var(--color-secundario);
+}
+#content.dark1>.Popup>.Popup-div>.Popup-h2{
+    color: var(--blanco);
 }
