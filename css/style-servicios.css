@@ -810,13 +810,13 @@ body {
     #input-subir.dark{
         color:var(--color-secundario)
     }
-    #content>.Popup{
+    #content.dark1>.Popup{
         background-color: var(--color-secundario-opacidad);
     }
-    #content>.Popup>.Popup-div{
+    #content.dark1>.Popup>.Popup-div{
         background-color: var(--color-secundario);
     }
-    #content>.Popup>.Popup-div>.Popup-h2{
+    #content.dark1>.Popup>.Popup-div>.Popup-h2{
         color: var(--blanco);
     }
 }
