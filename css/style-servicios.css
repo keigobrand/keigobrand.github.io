@@ -755,68 +755,68 @@ body {
 
 /*Modo oscuro*/
 @media (prefers-color-scheme: dark) {
-    body {
+    body, body.dark {
         background-color: var(--color-darkmod);
         color: #ffff;
     }
-
-    #header,
-    #footer {
+    
+    .Header, #header.dark, .Footer
+    #footer.dark {
         color: #ffff;
         background-color: var(--color-darkmod);
     }
-
-    #content {
+    
+    .Content, #content.dark1 {
         background-color: var(--color-secundario-opacidad);
     }
-
-    #header>nav>ul>li>a:hover {
+    
+    #header.dark>nav>ul>li>a:hover, .Header-a:hover {
         color: var(--color-principal);
     }
-
-    #actual {
+    
+    #actual.verde, #actual {
         background-color: #00A263;
     }
-
-    #lupa {
+    
+    #lupa.verde, .Header-lupa{
         color: var(--color-principal);
     }
-
+    
     /*switch Dark-mod*/
-    #switch {
+    #switch.dark, .Header-darkmod{
         border-color: var(--color-principal);
     }
-
-    #luna.folse {
+    
+    #luna.folse, #luna {
         display: none;
     }
-
-    #sol.active {
+    
+    #sol.active, #sol {
         display: block;
         float: right;
     }
-
+    
     /*contenido*/
-
-    #Servicios>.Servicios-div{
+    
+    #Servicios.dark>.Servicios-div, .Servicios-div{
         background-color: var(--color-principal);
     }
-    #form{
+    #form.dark, .Form{
         background-color: var(--color-principal);
     }
-    #enviar{
+    #enviar.dark, .Form-enviar{
         background-color: var(--color-secundario);
     }
-    #input-subir{
+    #input-subir.dark, .Form-input--subir{
         color:var(--color-secundario)
     }
-    .Popup{
+    #content.dark1>.Popup, .Popup{
         background-color: var(--color-secundario-opacidad);
     }
-    .Popup-div{
+    #content.dark1>.Popup>.Popup-div, .Popup-div{
         background-color: var(--color-secundario);
     }
-    .Popup-h2{
+    #content.dark1>.Popup>.Popup-div>.Popup-h2, .Popup-h2{
         color: var(--blanco);
     }
 }
