@@ -760,13 +760,13 @@ body {
         color: #ffff;
     }
     
-    .Header, #header.dark, .Footer
+    .Header, #header.dark, .Footer,
     #footer.dark {
         color: #ffff;
         background-color: var(--color-darkmod);
     }
     
-    .Content, #content.dark1 {
+    #Content, #content.dark1 {
         background-color: var(--color-secundario-opacidad);
     }
     
