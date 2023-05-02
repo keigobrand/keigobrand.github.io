@@ -766,7 +766,7 @@ body {
         background-color: var(--color-darkmod);
     }
     
-    #Content, #content.dark1 {
+    #content, #content.dark1 {
         background-color: var(--color-secundario-opacidad);
     }
     
