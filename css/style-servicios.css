@@ -765,7 +765,7 @@ body {
         color: #ffff;
         background-color: var(--color-darkmod);
     }
-    #header.dark>.Header-nav, .Header {
+    #header.dark>.Header-nav, .Header-nav {
         background-color: var(--color-darkmod);
         border: .15em solid var(--color-principal);
         border-top: none;
