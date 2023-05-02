@@ -853,7 +853,7 @@ body {
     
     /*switch Dark-mod*/
     #switch.dark {
-        border-color: none;
+        border-color: var(--color-secundario);
     }
     
     #luna.folse {
