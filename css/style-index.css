@@ -375,7 +375,7 @@ display: block;
 }*/
 
 /*responsive-adaptacion a dispositivos*/
-@media screen and (min-width:1425px) {
+@media screen and (min-width:1025px) {
         /*stilos barra scrol interna*/
         .Valoraciones-p::-webkit-scrollbar {
             appearance: none;
