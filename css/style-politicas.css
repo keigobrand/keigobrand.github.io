@@ -472,6 +472,9 @@ body {
     .Section {
         width: 100%;
     }
+    .Section-p{
+        width: 100%;
+    }
     .Footer {
         flex-direction: column-reverse;
     }
