@@ -478,6 +478,7 @@ body {
     .Main-h1{
         text-align: center;
         line-height: 120%;
+        
     }
     .Footer {
         flex-direction: column-reverse;
