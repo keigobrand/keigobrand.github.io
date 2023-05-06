@@ -423,7 +423,66 @@ body {
 }*/
 
 /*responsive-adaptacion a dispositivos*/
+@media screen and (min-width:1025px) {
+    
+    /*stilos barra scrol interna*/
+    .Valoraciones-p::-webkit-scrollbar {
+        appearance: none;
+        width: .62em;
+        height: 6em;
+        background-color: transparent;
+    }
 
+    .Valoraciones-p::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    .Valoraciones-p::-webkit-scrollbar-thumb {
+        background-color: rgba(var(--color-principal), 0.5);
+        border-radius: 5em;
+        height: 3em;
+    }
+
+    .Valoraciones-p::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+    }
+
+    .Valoraciones-p::-webkit-scrollbar-thumb:active {
+        background-color: #999;
+    }
+
+    /* Firefox */
+    @-moz-document url-prefix() {
+        .Valoraciones-p {
+            scrollbar-color: var(--color-principal) transparent;
+            scrollbar-width: thin;
+            appearance: none;
+            -moz-appearance: none;
+        }
+
+        .Valoraciones-p::-moz-scrollbar-thumb {
+            scrollbar-color: var(--color-principal) transparent;
+            border-radius: 1em;
+            height: 3em;
+        }
+
+        .Valoraciones-p::-moz-scrollbar-track {
+            background-color: transparent;
+        }
+    }
+
+    /* Edge y IE */
+    .Valoraciones-p::-ms-scrollbar {
+        width: .62em;
+        background-color: transparent;
+    }
+
+    .Valoraciones-p::-ms-scrollbar-thumb {
+        background-color: rgba(var(--color-principal), 0.5);
+        border-radius: 5em;
+        height: 3em;
+    }
+}
 
 @media screen and (max-width:1424px) {
     body {
