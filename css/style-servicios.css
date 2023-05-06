@@ -675,9 +675,13 @@ body {
         width: 100%;
     }
     .Popup{
-        width: 100%;
+        width: 100vw;
         height: 100vh;
-        padding-top: 7em;
+        border-radius: 0em;
+        padding: auto;
+        margin: 0em;
+        z-index:102;
+
     }
     .Popup-div{
         width: 90%;
