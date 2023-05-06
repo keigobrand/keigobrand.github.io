@@ -665,7 +665,6 @@ body {
         background-color: var(--color-principal);
     }
 
-    }
     #enviar.dark{
         background-color: var(--color-secundario);
     }
