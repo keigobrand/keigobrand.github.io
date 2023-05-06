@@ -439,10 +439,10 @@ body {
     }
 }
 @media screen and (max-width:767px) {
-    .Header-marca {
-        width: 12em;
+    .Header-marca{
+        width: 13em;
+        height: 3.5em;
     }
-
     .Redes--top {
         right: .35em;
         top: 8em;
