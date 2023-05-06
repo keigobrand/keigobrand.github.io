@@ -618,7 +618,7 @@ body {
     .Valoraciones-p{
         min-width: 70%;
         max-height: 6em;
-        margin: .5em .2em 0em 0em;
+        margin: 0em .2em 0em 0em;
     }
     .Footer {
         flex-direction: column-reverse;
