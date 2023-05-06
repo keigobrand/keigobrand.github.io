@@ -332,6 +332,14 @@ display: block;
         overflow: auto;
         max-height:8em;
     }
+    .Valoraciones-p::after {
+        content: "Desplazar hacia abajo para ver más"; /* Agrega el texto de la indicación visual */
+        position: absolute; /* Establece la posición como absoluta para superponer el texto en la parte inferior del elemento */
+        bottom: 0; /* Establece la posición en la parte inferior del elemento */
+        left: 50%; /* Alinea el texto en el centro del elemento */
+        transform: translateX(-50%); /* Centra horizontalmente el texto */
+        font-size: 14px; 
+    }
     .Valoraciones-svg{
         border: 2px solid var(--color-principal);
         border-top: none;
