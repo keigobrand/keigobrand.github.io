@@ -461,6 +461,9 @@ display: block;
     .Section{
         width: 100%;
     }
+    .Inicio-logo{
+        width: 15em;
+    }
     .Inicio-p{
         text-align: left;
     }
