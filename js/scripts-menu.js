@@ -31,6 +31,9 @@ if (valor=="true") {
 } else {
     body.classList.remove("dark")
 }
+
+
+/*añadido intento modo movil no funciono*/
 function toggleModo() {
     const body = document.body;
     const val = body.classList.toggle("dark");
