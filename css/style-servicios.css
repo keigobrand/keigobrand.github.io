@@ -695,9 +695,7 @@ body {
     .Popup{
         width: 100%;
         height: 100vh;
-        margin-top: 0%;
-        z-index: 101;
-        border-radius: 0%;
+        padding-top: 7em;
     }
     .Popup-div{
         width: 90%;
@@ -755,200 +753,68 @@ body {
 
 /*Modo oscuro*/
 @media (prefers-color-scheme: dark) {
-    body{
+    body.dark {
         background-color: var(--color-darkmod);
         color: #ffff;
     }
-    
-    .Header, .Footer {
+
+    #header.dark,
+    #footer.dark {
         color: #ffff;
         background-color: var(--color-darkmod);
     }
-    .Header-nav {
-        background-color: var(--color-darkmod);
-        border: .15em solid var(--color-principal);
-        border-top: none;
-    }
-    
-    #content{
+
+    #content.dark1 {
         background-color: var(--color-secundario-opacidad);
     }
-    
-    .Header-a:hover {
+
+    #header.dark>nav>ul>li>a:hover {
         color: var(--color-principal);
     }
-    
-     #actual {
+
+    #actual.verde {
         background-color: #00A263;
     }
-    
-    .Header-lupa{
+
+    #lupa.verde {
         color: var(--color-principal);
     }
-    
+
     /*switch Dark-mod*/
-    .Header-darkmod{
+    #switch.dark {
         border-color: var(--color-principal);
     }
-    
-    .Header-luna {
+
+    #luna.folse {
         display: none;
     }
-    
-    .Header-sol {
+
+    #sol.active {
         display: block;
         float: right;
     }
-    
+
     /*contenido*/
-    
-    .Servicios-div{
-        background-color: var(--color-principal);
-    }
-    .Form{
-        background-color: var(--color-principal);
-    }
-    .Form-enviar{
-        background-color: var(--color-secundario);
-    }
-    .Form-input--subir{
-        color:var(--color-secundario)
-    }
-    .Popup{
-        background-color: var(--color-secundario-opacidad);
-    }
-    .Popup-div{
-        background-color: var(--color-secundario);
-    }
-    .Popup-h2{
-        color: var(--blanco);
-    }
-    /*modo claro*/
-    body.dark,
-    #footer.dark  {
-        background-color: var(--blanco);
-        color: var(--color-text);
-    }
-    
-    #header.dark {
-        color: var();
-        background-color: var(--color-principal);
-    }
-    
-    #content.dark1 {
-        background-color: var(--blanco-opacidad);
-    }
-    
-    #header.dark>nav>ul>li>a:hover {
-        color: var(--color-secundario);
-    }
-    
-    #actual.verde {
-        background-color: var(--color-secundario);
-    }
-    
-    #lupa.verde {
-        color: var(--color-secundario);
-    }
-    
-    /*switch Dark-mod*/
-    #switch.dark {
-        border-color: var(--color-secundario);
-    }
-    
-    #luna.folse {
-        display: block;
-    }
-    
-    #sol.active {
-        display: none;
-    }
-    
-    /*contenido*/
-    
+
     #Servicios.dark>.Servicios-div{
-        background-color: var(--color-secundario);
+        background-color: var(--color-principal);
     }
     #form.dark{
-        background-color: var(--color-secundario);
+        background-color: var(--color-principal);
     }
     #enviar.dark{
-        background-color: var(--color-principal);
+        background-color: var(--color-secundario);
     }
     #input-subir.dark{
-        color:var(--color-principal)
+        color:var(--color-secundario)
     }
-    #content.dark1>.Popup{
-        background-color: var(--blanco-opacidad);
+    #content>.Popup{
+        background-color: var(--color-secundario-opacidad);
     }
-    #content.dark1>.Popup>.Popup-div{
-        background-color: var(--color-principal);
+    #content>.Popup>.Popup-div{
+        background-color: var(--color-secundario);
     }
-    #content.dark1>.Popup>.Popup-div>.Popup-h2{
-        color: var(--color-secundario);
+    #content>.Popup>.Popup-div>.Popup-h2{
+        color: var(--blanco);
     }
-}
-body.dark {
-    background-color: var(--color-darkmod);
-    color: #ffff;
-}
-
-#header.dark,
-#footer.dark {
-    color: #ffff;
-    background-color: var(--color-darkmod);
-}
-
-#content.dark1 {
-    background-color: var(--color-secundario-opacidad);
-}
-
-#header.dark>nav>ul>li>a:hover {
-    color: var(--color-principal);
-}
-
-#actual.verde {
-    background-color: #00A263;
-}
-
-#lupa.verde {
-    color: var(--color-principal);
-}
-
-/*switch Dark-mod*/
-#switch.dark {
-    border-color: var(--color-principal);
-}
-
-#luna.folse {
-    display: none;
-}
-
-#sol.active {
-    display: block;
-    float: right;
-}
-
-/*contenido*/
-
-#Servicios.dark>.Servicios-div{
-    background-color: var(--color-principal);
-}
-#form.dark{
-    background-color: var(--color-principal);
-}
-#enviar.dark{
-    background-color: var(--color-secundario);
-}
-#input-subir.dark{
-    color:var(--color-secundario)
-}
-#content.dark1>.Popup{
-    background-color: var(--color-secundario-opacidad);
-}
-#content.dark1>.Popup>.Popup-div{
-    background-color: var(--color-secundario);
-}
-#content.dark1>.Popup>.Popup-div>.Popup-h2{
-    color: var(--blanco);
 }
