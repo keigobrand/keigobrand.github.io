@@ -139,7 +139,7 @@ body {
     margin: 0em;
     height: 1.87em;
     width: 12.5em;
-    border-radius: 1.56em;
+    border-radius: var(--border-radius-btn);
     padding: .5em;
     font-size: .75em;
     background-color: #f3f3f3;
