@@ -31,36 +31,15 @@ if (valor=="true") {
 } else {
     body.classList.remove("dark")
 }*/
-let modo = document.getElementById("switch");
-let body = document.body;
-
-// función para cambiar el modo a oscuro
-function cambiarAModoOscuro() {
-  body.classList.add("dark");
-  localStorage.setItem("modo", "oscuro");
-}
-
-// función para cambiar el modo a claro
-function cambiarAModoClaro() {
-  body.classList.remove("dark");
-  localStorage.setItem("modo", "claro");
-}
-
-// manejar el evento clic del interruptor
-modo.addEventListener("click", function() {
-  if (body.classList.contains("dark")) {
-    cambiarAModoClaro();
-  } else {
-    cambiarAModoOscuro();
+function toggleModo() {
+    const body = document.body;
+    const val = body.classList.toggle("dark");
+    localStorage.setItem("modo", val);
   }
-});
-
-// obtener el valor del modo del almacenamiento local
-let valor = localStorage.getItem("modo");
-
-// establecer el modo según el valor del almacenamiento local
-if (valor === "oscuro") {
-  cambiarAModoOscuro();
-} else {
-  cambiarAModoClaro();
-}
+  
+  const body = document.body;
+  const preferenciaColor = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  
+  if (localStorage.getItem("modo") === "true" || (localStorage.getItem("modo") === null && preferenciaColor)) {
+    body.classList.add("dark");
+  }
