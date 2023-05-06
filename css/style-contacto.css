@@ -1,4 +1,6 @@
 @import url(reset-pro.css);
+/* Variables */
+@import url(variables.css);
 
 body {
     font-stretch: ubuntu;
@@ -8,30 +10,6 @@ body {
     font-weight: 400;
     background: url("../img/keigobrand-fondo.svg") 50% 0% / cover no-repeat;
 
-}
-
-/* Variables */
-
-:root {
-    /* Colores */
-    --color-text: #4d4d4d;
-    --color-principal: #00A263;
-    --color-secundario: #36195d;
-    --color-darkmod: #36195d;
-    --color-secundario-opacidad: #36195dea;
-    --blanco: #ffffff;
-    --blanco-opacidad: #ffffffea;
-    --color-sombra: #573EFF;
-
-    /* Fuentes */
-    --text-size-menu: 1.5em;
-    --text-size-apartados: 2.5em;
-    --text-size-cuerpo: 1em;
-    --text-size-destacado: 1.125em;
-    --text-size-cuerpo-mayor: 1.25em;
-
-    /* Animaciones */
-    --animation: animation--bar 2s alternate ease-out;
 }
 
 /* Header */
@@ -64,7 +42,7 @@ body {
 /*Menu*/
 #actual {
     background-color: #392562;
-    border-radius: .5em;
+    border-radius: var(--border-radius-menu);
 }
 
 #actual:hover {
@@ -255,7 +233,7 @@ body {
     width: 87%;
     background-color: var(--blanco-opacidad);
     margin: auto auto;
-    border-radius: 4.5em;
+    border-radius: var(--border-radius);
     padding: 5.5em 10em;
 }
 
@@ -290,7 +268,7 @@ body {
 .Contacto{
     width: 80%;
     background-color: var(--color-secundario);
-    border-radius: .5em;
+    border-radius: var(--border-radius);
     padding: 4em;
 }
 .Contacto-div{
@@ -325,7 +303,7 @@ body {
     width: 100%;
     height: 100%;
     border:solid .18em var(--color-principal);
-    border-radius: 0em 3em 0em 3em ;
+    border-radius: 0em var(--border-radius) 0em var(--border-radius) ;
 }
 /* Estilos del formulario */
 .Form {
@@ -333,7 +311,7 @@ body {
     margin: 0 auto;
     padding: 5em 6em;
     background-color: var(--color-secundario);
-    border-radius: 5em;
+    border-radius: var(--border-radius);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -351,7 +329,7 @@ body {
     height: 2em;
     padding: .5em;
     background-color: #ffffff14;
-    border-radius: .5em;
+    border-radius: var(--border-radius-menu);
     cursor: pointer;
 }
 
@@ -380,7 +358,7 @@ body {
     margin-bottom: .6em;
     border-bottom: .15em solid #ffffff;
     background-color: #ffffff14;
-    border-radius: .5em;
+    border-radius: var(--border-radius-btn);
     color: var(--blanco);
     font-size: var(--text-size-cuerpo);
     outline: none;
@@ -682,8 +660,11 @@ body {
     #contacto.dark{
         background-color: var(--color-principal);
     }
+
     #form.dark{
         background-color: var(--color-principal);
+    }
+
     }
     #enviar.dark{
         background-color: var(--color-secundario);
