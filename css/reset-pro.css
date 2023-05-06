@@ -180,3 +180,14 @@ body {
     /* opcional */
     -moz-osx-font-smoothing: grayscale;
 }
+
+/*quitar seleccion en elementos con hover*/
+@media (max-width: 767px), (min-width: 768px) and (max-width: 1024px) {
+    *:hover {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+}
