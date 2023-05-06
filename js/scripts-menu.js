@@ -16,7 +16,7 @@ function animateBars() {
 }
 
 /*mantener modo socuro o claro */
-let modo=document.getElementById("switch");
+/*let modo=document.getElementById("switch");
 let body=document.body;
 
 modo.addEventListener("click", function(){
@@ -30,38 +30,37 @@ if (valor=="true") {
     body.classList.add("dark")
 } else {
     body.classList.remove("dark")
+}*/
+let modo = document.getElementById("switch");
+let body = document.body;
+
+// función para cambiar el modo a oscuro
+function cambiarAModoOscuro() {
+  body.classList.add("dark");
+  localStorage.setItem("modo", "oscuro");
 }
 
-/*const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+// función para cambiar el modo a claro
+function cambiarAModoClaro() {
+  body.classList.remove("dark");
+  localStorage.setItem("modo", "claro");
+}
 
-let currentTheme;
+// manejar el evento clic del interruptor
+modo.addEventListener("click", function() {
+  if (body.classList.contains("dark")) {
+    cambiarAModoClaro();
+  } else {
+    cambiarAModoOscuro();
+  }
+});
 
-if (localStorage.getItem("theme")) {
-    currentTheme = localStorage.getItem("theme");
-} else if (prefersDarkScheme.matches) {
-    currentTheme = "dark";
+// obtener el valor del modo del almacenamiento local
+let valor = localStorage.getItem("modo");
+
+// establecer el modo según el valor del almacenamiento local
+if (valor === "oscuro") {
+  cambiarAModoOscuro();
 } else {
-    currentTheme = "light";
+  cambiarAModoClaro();
 }
-
-if (currentTheme === "dark") {
-    document.body.classList.add("dark");
-
-} else {
-    document.body.classList.add("light");
-
-}
-
-const switchThemeBtn = document.querySelector("#switch");
-
-switchThemeBtn.addEventListener("click", function () {
-    if (currentTheme === "light") {
-        document.body.classList.replace("light", "dark");
-        currentTheme = "dark";
-        localStorage.setItem("theme", "dark");
-    } else {
-        document.body.classList.replace("dark", "light");
-        currentTheme = "light";
-        localStorage.setItem("theme", "light");
-    }
-});*/
