@@ -288,7 +288,10 @@ body {
     justify-content: flex-start;
     padding-top: 2em;
 }
-
+.Servicios-div:hover {
+    transform: scale(1.025);
+    box-shadow: var(--color-sombra) .30em .438em .438em;
+}
 .Servicios-h3 {
     margin-top: 1.5em;
     color: var(--blanco);
@@ -775,10 +778,10 @@ body {
     /*contenido*/
 
     #Servicios.dark>.Servicios-div{
-        background-color: var(--color-principal);
+        background-color: var(--color-principal-oscuro);
     }
     #form.dark{
-        background-color: var(--color-principal);
+        background-color: var(--color-principal-oscuro);
     }
     #enviar.dark{
         background-color: var(--color-secundario);

@@ -273,8 +273,7 @@ display: block;
     overflow: hidden;
 }
 .Proyectos-div:hover {
-    width: 17.5em;
-    height: 17.5em;
+    transform: scale(1.025);
     box-shadow: var(--color-sombra) .30em .438em .438em;
 }
 .Proyectos-a{
