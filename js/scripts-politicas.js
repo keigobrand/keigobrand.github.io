@@ -11,12 +11,12 @@ const switchButton = document.getElementById('switch'),
 
 switchButton.addEventListener('click',()=>{
     document.body.classList.toggle('dark');
-    sol.classList.toggle('active');
-    luna.classList.toggle('folse');
+    sol.classList.toggle('dark');
+    luna.classList.toggle('dark');
     header.classList.toggle('dark');
     footer.classList.toggle('dark');
-    lupa.classList.toggle('verde');
-    main.classList.toggle('dark1');
+    lupa.classList.toggle('dark');
+    main.classList.toggle('dark');
     switchButton.classList.toggle('dark');
 
 

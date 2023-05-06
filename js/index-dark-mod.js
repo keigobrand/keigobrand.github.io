@@ -12,17 +12,18 @@ const switchButton = document.getElementById('switch'),
     footer = document.getElementById('footer');
 
 
-switchButton.addEventListener('click',()=>{
+switchButton.addEventListener('click', e =>{
     document.body.classList.toggle('dark');
-    sol.classList.toggle('active');
-    luna.classList.toggle('folse');
+    sol.classList.toggle('dark');
+    luna.classList.toggle('dark');
     header.classList.toggle('dark');
     footer.classList.toggle('dark');
-    actual.classList.toggle('verde');
-    lupa.classList.toggle('verde');
+    actual.classList.toggle('dark');
+    lupa.classList.toggle('dark');
     logotipo.classList.toggle('dark');
     isotipo.classList.toggle('dark');
-    main.classList.toggle('dark1');
+    main.classList.toggle('dark');
     switchButton.classList.toggle('dark');
+    
 
 })

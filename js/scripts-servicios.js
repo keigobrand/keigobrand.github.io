@@ -42,7 +42,7 @@ for (let i = 0; i < cerrarButton.length; i++) {
     }
 }
 
-/* Modo oscuro*/
+/* Modo oscuro
 const switchButton = document.getElementById('switch'),
     luna = document.getElementById('luna'),
     sol = document.getElementById('sol'),
@@ -58,19 +58,20 @@ const switchButton = document.getElementById('switch'),
     servicios = document.getElementById('Servicios');
 
 
-switchButton.addEventListener('click',()=>{
+switchButton.addEventListener('click', e =>{
     document.body.classList.toggle('dark');
-    sol.classList.toggle('active');
-    luna.classList.toggle('folse');
+    sol.classList.toggle('dark');
+    luna.classList.toggle('dark');
     header.classList.toggle('dark');
     footer.classList.toggle('dark');
-    actual.classList.toggle('verde');
-    lupa.classList.toggle('verde');
-    main.classList.toggle('dark1');
+    actual.classList.toggle('dark');
+    lupa.classList.toggle('dark');
+    main.classList.toggle('dark');
     enviar.classList.toggle('dark');
     switchButton.classList.toggle('dark');
     subir.classList.toggle('dark');
     form.classList.toggle('dark');
     servicios.classList.toggle('dark');
+    
 
-})
+})*/

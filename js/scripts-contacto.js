@@ -15,13 +15,13 @@ const switchButton = document.getElementById('switch'),
 
 switchButton.addEventListener('click',()=>{
     document.body.classList.toggle('dark');
-    sol.classList.toggle('active');
-    luna.classList.toggle('folse');
+    sol.classList.toggle('dark');
+    luna.classList.toggle('dark');
     header.classList.toggle('dark');
     footer.classList.toggle('dark');
-    actual.classList.toggle('verde');
-    lupa.classList.toggle('verde');
-    main.classList.toggle('dark1');
+    actual.classList.toggle('dark');
+    lupa.classList.toggle('dark');
+    main.classList.toggle('dark');
     form.classList.toggle('dark');
     enviar.classList.toggle('dark');
     contacto.classList.toggle('dark');

@@ -491,7 +491,7 @@ body {
         background-color: var(--color-darkmod);
     }
 
-    #content.dark1 {
+    #content.dark {
         background-color: var(--color-secundario-opacidad);
     }
 
@@ -499,11 +499,11 @@ body {
         color: var(--color-principal);
     }
 
-    #actual.verde {
+    #actual.dark {
         background-color: #00A263;
     }
 
-    #lupa.verde {
+    #lupa.dark {
         color: var(--color-principal);
     }
 
@@ -512,11 +512,11 @@ body {
         border-color: var(--color-principal);
     }
 
-    #luna.folse {
+    #luna.dark {
         display: none;
     }
 
-    #sol.active {
+    #sol.dark {
         display: block;
         float: right;
     }
