@@ -31,9 +31,9 @@ body{
 .Header-marca{
     height: 4.5em;
     width: 24em;
-
 }
 .Header-img{
+    text-align: center;
     width: 17em;
     margin: auto 0em;
 }
@@ -444,7 +444,8 @@ display: block;
 
 @media screen and (max-width:767px) {
     .Header-marca{
-        width: 12em;
+        width: 13em;
+        height: 3.5em;
     }
     .Redes--top{
         right: .35em;
