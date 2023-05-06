@@ -580,6 +580,48 @@ body {
     float: right;
 }
 /*cambiar entre modos*/
+.dark {
+    background-color: var(--color-darkmod);
+    color: #ffff;
+}
+
+.dark #header, .dark #footer{
+    color: #ffff;
+    background-color: var(--color-darkmod);
+}
+
+.dark .Header-a:hover {
+    color: var(--color-principal);
+}
+.dark #actual{
+    background-color: #00A263;
+}
+.dark #actual:hover{
+    background-color: transparent;
+}
+.dark #lupa{
+    color: var(--color-principal);
+}
+.dark #content{
+    background-color: var(--color-secundario-opacidad);
+}
+.dark .st0{
+    fill: #ffffff;
+}
+.dark .st1{
+    fill: #ffffff;
+}
+/*switch Dark-mod*/
+.dark #switch{
+    border-color: var(--color-principal);
+}
+.dark #luna{
+    display: none;
+}
+.dark #sol{
+    display: block;
+    float: right;
+}
 }
 .dark {
     background-color: var(--color-darkmod);
