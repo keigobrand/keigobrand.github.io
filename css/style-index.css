@@ -562,10 +562,10 @@ body {
 #content{
     background-color: var(--color-secundario-opacidad);
 }
-.st0{
+#isotipo>.st0{
     fill: #ffffff;
 }
-.st1{
+#logotipo>.st1{
     fill: #ffffff;
 }
 /*switch Dark-mod*/
