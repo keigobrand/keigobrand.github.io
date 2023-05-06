@@ -803,7 +803,7 @@ body {
         color: var(--blanco);
     }
 }*/
-.dark body{
+.dark {
     background-color: var(--color-darkmod);
     color: #ffff;
 }

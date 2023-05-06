@@ -538,7 +538,7 @@ display: block;
 
 }*/
 
-.dark body{
+.dark {
     background-color: var(--color-darkmod);
     color: #ffff;
 }

@@ -16,35 +16,21 @@ function animateBars() {
 }
 
 /*mantener modo socuro o claro */
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+let modo=document.getElementById("switch");
+let body=document.body;
 
-let currentTheme;
+modo.addEventListener("click", function(){
+    let val=body.classList.toggle("dark")
+    localStorage.setItem("modo",val)
+})
 
-if (localStorage.getItem("theme")) {
-    currentTheme = localStorage.getItem("theme");
-} else if (prefersDarkScheme.matches) {
-    currentTheme = "dark";
+let valor=localStorage.getItem("modo")
+
+if (valor=="true") {
+    body.classList.add("dark")
 } else {
-    currentTheme = "light";
+    body.classList.remove("dark")
 }
-
-if (currentTheme === "dark") {
-    document.documentElement.classList.add("dark");
-}
-
-const switchThemeBtn = document.querySelector("#switch");
-
-switchThemeBtn.addEventListener("click", function () {
-    if (currentTheme === "light") {
-        document.documentElement.classList.replace("light", "dark");
-        currentTheme = "dark";
-    } else {
-        document.documentElement.classList.replace("dark", "light");
-        currentTheme = "light";
-    }
-    localStorage.setItem("theme", currentTheme);
-});
-
 
 /*const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
