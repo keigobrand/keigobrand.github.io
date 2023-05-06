@@ -304,7 +304,7 @@ display: block;
         font-size: var(--text-size-destacado);
         float: right;
         padding: .625em;
-        margin-top: 12%;
+        margin: 2.5em .5em 0em 0em;
         overflow: auto;
         max-height:8em;
     }
@@ -467,10 +467,12 @@ display: block;
         text-align: left;
     }
     .Valoraciones-div{
-        width:17em;
+        width:17.3em;
         height: 12em;
     }
-
+    .Valoraciones-p{
+        margin: 1.5em 0em 0em;
+    }
     .Footer{
         flex-direction: column-reverse;
     }
