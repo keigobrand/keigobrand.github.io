@@ -596,7 +596,7 @@ body {
         display: flex;
     }
 
-    .header.dark>.menu {
+    .dark .menu {
         background-color: var(--color-darkmod);
         outline: .12em solid var(--color-principal);
     }
@@ -613,7 +613,7 @@ body {
         padding: .6em 0em;
     }
 
-    #header.dark>.Header-nav {
+    .dark .Header-nav {
         background-color: var(--color-darkmod);
         border: .15em solid var(--color-principal);
         border-top: none;
@@ -804,74 +804,75 @@ body {
     }
 }*/
 @media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference){
-body{
-    background-color: var(--color-darkmod);
-    color: #ffff;
+    body{
+        background-color: var(--color-darkmod);
+        color: #ffff;
+    }
+
+    #header,
+    #footer{
+        color: #ffff;
+        background-color: var(--color-darkmod);
+    }
+
+    #content{
+        background-color: var(--color-secundario-opacidad);
+    }
+
+    .Header-a:hover {
+        color: var(--color-principal);
+        
+    }
+
+    #actual{
+        background-color: #00A263;
+    }
+    #actual:hover{
+        background-color: transparent;
+    }
+    #lupa{
+        color: var(--color-principal);
+    }
+
+    /*switch Dark-mod*/
+    #switch{
+        border-color: var(--color-principal);
+    }
+
+    #luna{
+        display: none;
+    }
+
+    #sol{
+        display: block;
+        float: right;
+    }
+
+    /*contenido*/
+
+    .Servicios-div{
+        background-color: var(--color-principal-oscuro);
+    }
+    #form{
+        background-color: var(--color-principal-oscuro);
+    }
+    #enviar{
+        background-color: var(--color-secundario);
+    }
+    #input-subir{
+        color:var(--color-secundario)
+    }
+    .Popup{
+        background-color: var(--color-secundario-opacidad);
+    }
+    .Popup-div{
+        background-color: var(--color-secundario);
+    }
+    .Popup-h2{
+        color: var(--blanco);
+    }
 }
 
-#header,
-#footer{
-    color: #ffff;
-    background-color: var(--color-darkmod);
-}
-
-#content{
-    background-color: var(--color-secundario-opacidad);
-}
-
-.Header-a:hover {
-    color: var(--color-principal);
-    
-}
-
-#actual{
-    background-color: #00A263;
-}
-#actual:hover{
-    background-color: transparent;
-}
-#lupa{
-    color: var(--color-principal);
-}
-
-/*switch Dark-mod*/
-#switch{
-    border-color: var(--color-principal);
-}
-
-#luna{
-    display: none;
-}
-
-#sol{
-    display: block;
-    float: right;
-}
-
-/*contenido*/
-
-.Servicios-div{
-    background-color: var(--color-principal-oscuro);
-}
-#form{
-    background-color: var(--color-principal-oscuro);
-}
-#enviar{
-    background-color: var(--color-secundario);
-}
-#input-subir{
-    color:var(--color-secundario)
-}
-.Popup{
-    background-color: var(--color-secundario-opacidad);
-}
-.Popup-div{
-    background-color: var(--color-secundario);
-}
-.Popup-h2{
-    color: var(--blanco);
-}
-}
 .dark {
     background-color: var(--color-darkmod);
     color: #ffff;
