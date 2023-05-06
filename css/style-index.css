@@ -526,7 +526,8 @@ body {
 
 @media screen and (max-width:767px) {
     .Header-marca {
-        width: 12em;
+        max-width: 12em;
+        min.width: 10em;
     }
 
     .Redes--top {
