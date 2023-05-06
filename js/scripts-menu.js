@@ -16,7 +16,7 @@ function animateBars() {
 }
 
 /*mantener modo socuro o claro */
-/*let modo=document.getElementById("switch");
+let modo=document.getElementById("switch");
 let body=document.body;
 
 modo.addEventListener("click", function(){
@@ -30,16 +30,16 @@ if (valor=="true") {
     body.classList.add("dark")
 } else {
     body.classList.remove("dark")
-}*/
+}
 function toggleModo() {
     const body = document.body;
     const val = body.classList.toggle("dark");
     localStorage.setItem("modo", val);
-  }
-  
-  const body = document.body;
-  const preferenciaColor = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  
-  if (localStorage.getItem("modo") === "true" || (localStorage.getItem("modo") === null && preferenciaColor)) {
+}
+
+
+const preferenciaColor = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (localStorage.getItem("modo") === "true" || (localStorage.getItem("modo") === null && preferenciaColor)) {
     body.classList.add("dark");
-  }
+}
