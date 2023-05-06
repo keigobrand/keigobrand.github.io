@@ -25,15 +25,3 @@
     /* Animaciones */
     --animation: animation--bar 2s alternate ease-out;
 }
-@media screen and (width:767){
-    :root{
-
-        /* Fuentes */    
-        --text-size-menu: calc(1.5em-.125rem);
-        --text-size-apartados: calc( 2.5em -.125rem);
-        --text-size-cuerpo: calc(1em -.125rem);
-        --text-size-destacado: calc( 1.125em -.125rem);
-        --text-size-cuerpo-mayor: calc( 1.25rem -.125rem);
-
-    }
-}
