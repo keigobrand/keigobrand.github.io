@@ -1,4 +1,6 @@
 @import url(reset-pro.css);
+/* Variables */
+@import url(variables.css);
 
 body {
     font-stretch: ubuntu;
@@ -8,30 +10,6 @@ body {
     font-weight: 400;
     background: url("../img/keigobrand-fondo.svg") 50% 0% / cover no-repeat;
 
-}
-
-/* Variables */
-
-:root {
-    /* Colores */
-    --color-text: #4d4d4d;
-    --color-principal: #00A263;
-    --color-secundario: #36195d;
-    --color-darkmod: #36195d;
-    --color-secundario-opacidad: #36195dea;
-    --blanco: #ffffff;
-    --blanco-opacidad: #ffffffea;
-    --color-sombra: #573EFF;
-
-    /* Fuentes */
-    --text-size-menu: 1.5em;
-    --text-size-apartados: 2.5em;
-    --text-size-cuerpo: 1em;
-    --text-size-destacado: 1.125em;
-    --text-size-cuerpo-mayor: 1.25em;
-
-    /* Animaciones */
-    --animation: animation--bar 2s alternate ease-out;
 }
 
 /* Header */
@@ -65,7 +43,7 @@ body {
 /*Menu*/
 #actual {
     background-color: #392562;
-    border-radius: .5em;
+    border-radius: var(--border-radius-menu);
 }
 
 #actual:hover {
@@ -201,7 +179,7 @@ body {
     width: 100%;
     height: 2px;
     background: #ffffff;
-    border-radius: 10px;
+    border-radius: var(--border-radius-btn);
     margin-top: 6px;
     transform-origin: 0px 100%;
     transition: all 300ms;
@@ -256,7 +234,7 @@ body {
     width: 87%;
     background-color: var(--blanco-opacidad);
     margin: auto auto;
-    border-radius: 4.5em;
+    border-radius: var(--border-radius);
     padding: 5.5em 10em;
 }
 

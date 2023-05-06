@@ -1,4 +1,6 @@
 @import url(reset-pro.css);
+/* Variables */
+@import url(variables.css);
 
 body{
     font-stretch: ubuntu;
@@ -8,32 +10,6 @@ body{
     font-weight: 400;
     background: url("../img/keigobrand-fondo.svg") 50% 0% / contain no-repeat;
 
-}
-
-/* Variables */
-
-:root{
-    /* Colores */
-    --color-text: #4d4d4d;
-    --color-principal: #00A263;
-    --color-secundario:#36195d;
-    --color-darkmod: #36195d;
-    --color-secundario-opacidad: #36195dea;
-    --blanco:#ffffff;
-    --blanco-opacidad:#ffffffea;
-    --color-sombra:#573EFF;
-    
-    /* Fuentes */    
-    --text-size-menu: 1.5em;
-    --text-size-apartados: 2.5em;
-    --text-size-cuerpo: 1em;
-    --text-size-destacado: 1.125em;
-    --text-size-cuerpo-mayor: 1.25rem;
-    /*Medidas*/
-    --border-radius: 2.5em;
-
-    /* Animaciones */
-    --animation: animation--bar 2s alternate ease-out;
 }
 
 /* Header */
@@ -64,7 +40,7 @@ body{
 /*Menu*/
 #actual{
     background-color: #392562;
-    border-radius: .5em;
+    border-radius: var(--border-radius-menu);;
 }
 #actual:hover{
     background-color: transparent;
@@ -145,7 +121,7 @@ body{
     margin: 0em;
     height: 1.87em;
     width: 12.5em;
-    border-radius: 1.56em;
+    border-radius: var(--border-radius);;
     padding: .5em;
     font-size: .75em;
     background-color: #f3f3f3;
@@ -230,7 +206,7 @@ display: block;
     width: 87%;
     background-color: var(--blanco-opacidad);
     margin: auto  auto;
-    border-radius: 4.5em;
+    border-radius: var(--border-radius);
     padding: 5.5em 10em;
 }
 .Main-separador{
@@ -292,7 +268,7 @@ display: block;
     height: 17.18em;
     margin: 1.87em .62em;
     border: .125em solid var(--color-principal);
-    border-radius: var(--border-radius);
+    border-radius: var(--border-radius);;
     cursor: pointer;
     overflow: hidden;
 }
@@ -322,7 +298,7 @@ display: block;
         height: 14em;
         border: .125em solid var(--color-principal);
         margin: 1.25em;
-        border-radius: 2.5em;
+        border-radius: var(--border-radius);;
         
     }
     .Valoraciones-p{

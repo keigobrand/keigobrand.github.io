@@ -1,0 +1,26 @@
+:root{
+    /* Colores */
+    --color-text: #4d4d4d;
+    --color-principal: #00A263;
+    --color-secundario:#36195d;
+    --color-darkmod: #36195d;
+    --color-secundario-opacidad: #36195dea;
+    --blanco:#ffffff;
+    --blanco-opacidad:#ffffffea;
+    --color-sombra:#573EFF;
+    
+    /* Fuentes */    
+    --text-size-menu: 1.5em;
+    --text-size-apartados: 2.5em;
+    --text-size-cuerpo: 1em;
+    --text-size-destacado: 1.125em;
+    --text-size-cuerpo-mayor: 1.25rem;
+    
+    /*Medidas*/
+    --border-radius: 2.5em;
+    --border-radius-menu: calc(var(--border-radius)/8);
+    --border-radius-btn: calc(var(--border-radius)/6);
+    
+    /* Animaciones */
+    --animation: animation--bar 2s alternate ease-out;
+}
