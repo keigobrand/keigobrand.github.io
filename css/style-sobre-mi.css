@@ -51,9 +51,9 @@ body {
     color: #fff;
 }
 
-.Header-marca {
+.Header-marca{
     height: 4.5em;
-    min-width: 24em;
+    width: 24em;
 
 }
 
@@ -65,7 +65,7 @@ body {
 /*Menu*/
 #actual {
     background-color: #392562;
-    border-radius: .3em;
+    border-radius: .5em;
 }
 
 #actual:hover {

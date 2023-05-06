@@ -51,10 +51,9 @@ body {
     color: #fff;
 }
 
-.Header-marca {
+.Header-marca{
     height: 4.5em;
-    min-width: 24em;
-
+    width: 24em;
 }
 
 .Header-img {
@@ -65,7 +64,7 @@ body {
 /*Menu*/
 #actual {
     background-color: #392562;
-    border-radius: .3em;
+    border-radius: .5em;
 }
 
 #actual:hover {
@@ -291,7 +290,7 @@ body {
 .Contacto{
     width: 80%;
     background-color: var(--color-secundario);
-    border-radius: 3em;
+    border-radius: .5em;
     padding: 4em;
 }
 .Contacto-div{
