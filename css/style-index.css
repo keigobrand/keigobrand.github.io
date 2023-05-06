@@ -537,7 +537,7 @@ display: block;
     }
 
 }*/
-
+@media (prefers-color-scheme: dark){
 .dark {
     background-color: var(--color-darkmod);
     color: #ffff;
@@ -579,4 +579,5 @@ display: block;
 .dark #sol{
     display: block;
     float: right;
+}
 }

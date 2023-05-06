@@ -803,6 +803,7 @@ body {
         color: var(--blanco);
     }
 }*/
+@media (prefers-color-scheme: dark){
 .dark {
     background-color: var(--color-darkmod);
     color: #ffff;
@@ -869,4 +870,5 @@ body {
 }
 .dark .Popup-h2{
     color: var(--blanco);
+}
 }
