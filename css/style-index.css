@@ -322,8 +322,12 @@ body {
 }
 
 .Proyectos-div {
-    width: 17.18em;
-    height: 17.18em;
+    max-width: 20em;
+    max-height: 20em;
+    width: 17.8em;
+    height: 17.8em;
+    min-width: 17.18em;
+    min-height: 17.18em;
     margin: 1.87em .62em;
     border: .125em solid var(--color-principal);
     border-radius: 2.5em;
