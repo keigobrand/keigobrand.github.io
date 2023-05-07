@@ -33,7 +33,7 @@ if (valor=="true") {
 }
 
 
-/*añadido intento modo movil no funciono*/
+/*preferencias del naveagaodr o dispositivo*/
 function toggleModo() {
     const body = document.body;
     const val = body.classList.toggle("dark");
