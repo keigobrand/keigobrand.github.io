@@ -494,7 +494,7 @@ body {
 }
 
 /*Modo oscuro*/
-@media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
+/*@media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
     body{
         background-color: var(--color-darkmod);
         color: #ffff;
@@ -533,7 +533,7 @@ body {
             border-top: none;
         }
     }
-        /*switch Dark-mod*/
+        /*switch Dark-mod
         #switch{
             border-color: var(--color-principal);
         }
@@ -547,7 +547,7 @@ body {
             float: right;
         }
 
-}
+}*/
     .dark {
         background-color: var(--color-darkmod);
         color: #ffff;

@@ -492,52 +492,8 @@ display: block;
 }
 
 /*Modo oscuro*/
-/*@media (prefers-color-scheme: dark) {
-    body.dark {
-        background-color: var(--color-darkmod);
-        color: #ffff;
-    }
 
-    #header.dark, #footer.dark{
-        color: #ffff;
-        background-color: var(--color-darkmod);
-    }
-
-    #header.dark>nav>ul>li>a:hover {
-        color: var(--color-principal);
-    }
-    #actual.dark{
-        background-color: #00A263;
-    }
-    #actual.dark:hover{
-        background-color: transparent;
-    }
-    #lupa.dark{
-        color: var(--color-principal);
-    }
-    #content.dark{
-        background-color: var(--color-secundario-opacidad);
-    }
-    #isotipo.dark>.st0{
-        fill: #ffffff;
-    }
-    #logotipo.dark>.st1{
-        fill: #ffffff;
-    }
-    /*switch Dark-mod
-    #switch.dark {
-        border-color: var(--color-principal);
-    }
-    #luna.dark {
-        display: none;
-    }
-    #sol.dark {
-        display: block;
-        float: right;
-    }
-
-}*/
-@media (prefers-color-scheme: dark){
+/*@media (prefers-color-scheme: dark){
     body{
         background-color: var(--color-darkmod);
         color: #ffff;
@@ -580,7 +536,7 @@ display: block;
             border-top: none;
         }
     }
-    /*switch Dark-mod*/
+    /*switch Dark-mod
     #switch{
         border-color: var(--color-principal);
     }
@@ -591,7 +547,7 @@ display: block;
         display: block;
         float: right;
     }
-}
+}*/
 
 .dark {
     background-color: var(--color-darkmod);

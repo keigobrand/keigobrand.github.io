@@ -737,73 +737,8 @@ body {
 }
 
 /*Modo oscuro*/
-/*@media (prefers-color-scheme: dark) {
-    body.dark {
-        background-color: var(--color-darkmod);
-        color: #ffff;
-    }
 
-    #header.dark,
-    #footer.dark {
-        color: #ffff;
-        background-color: var(--color-darkmod);
-    }
-
-    #content.dark {
-        background-color: var(--color-secundario-opacidad);
-    }
-
-    #header.dark>nav>ul>li>a:hover {
-        color: var(--color-principal);
-    }
-
-    #actual.dark {
-        background-color: #00A263;
-    }
-
-    #lupa.dark {
-        color: var(--color-principal);
-    }
-
-    /*switch Dark-mod
-    #switch.dark {
-        border-color: var(--color-principal);
-    }
-
-    #luna.dark {
-        display: none;
-    }
-
-    #sol.dark {
-        display: block;
-        float: right;
-    }
-
-    /*contenido
-
-    #Servicios.dark>.Servicios-div{
-        background-color: var(--color-principal-oscuro);
-    }
-    #form.dark{
-        background-color: var(--color-principal-oscuro);
-    }
-    #enviar.dark{
-        background-color: var(--color-secundario);
-    }
-    #input-subir.dark{
-        color:var(--color-secundario)
-    }
-    #content.dark>.Popup{
-        background-color: var(--color-secundario-opacidad);
-    }
-    #content.dark>.Popup>.Popup-div{
-        background-color: var(--color-secundario);
-    }
-    #content.dark>.Popup>.Popup-div>.Popup-h2{
-        color: var(--blanco);
-    }
-}*/
-@media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference){
+/*@media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference){
     body{
         background-color: var(--color-darkmod);
         color: #ffff;
@@ -844,7 +779,7 @@ body {
             border-top: none;
         }
     }
-    /*switch Dark-mod*/
+    /*switch Dark-mod
     #switch{
         border-color: var(--color-principal);
     }
@@ -858,7 +793,7 @@ body {
         float: right;
     }
 
-    /*contenido*/
+    /*contenido
 
     .Servicios-div{
         background-color: var(--color-principal-oscuro);
@@ -881,7 +816,7 @@ body {
     .Popup-h2{
         color: var(--blanco);
     }
-}
+}*/
 
 .dark {
     background-color: var(--color-darkmod);

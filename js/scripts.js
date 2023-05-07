@@ -34,7 +34,7 @@ if (valor=="true") {
 
 
 /*añadido intento modo movil no funciono*/
-/*function toggleModo() {
+function toggleModo() {
     const body = document.body;
     const val = body.classList.toggle("dark");
     localStorage.setItem("modo", val);
@@ -45,4 +45,4 @@ const preferenciaColor = window.matchMedia('(prefers-color-scheme: dark)').match
 
 if (localStorage.getItem("modo") === "true" || (localStorage.getItem("modo") === null && preferenciaColor)) {
     body.classList.add("dark");
-}*/
+}

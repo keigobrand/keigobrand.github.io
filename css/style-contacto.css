@@ -616,7 +616,7 @@ body {
 }
 
 /*Modo oscuro*/
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
     body{
         background-color: var(--color-darkmod);
         color: #ffff;
@@ -654,7 +654,7 @@ body {
             border-top: none;
         }
     }
-    /*switch Dark-mod*/
+    /*switch Dark-mod
     #switch{
         border-color: var(--color-principal);
     }
@@ -667,7 +667,7 @@ body {
         display: block;
         float: right;
     }
-    /* contenido*/
+    /* contenido
     #contacto{
         background-color: var(--color-principal-oscuro);
     }
@@ -679,7 +679,7 @@ body {
     #enviar{
         background-color: var(--color-secundario);
     }
-}
+}*/
 
 .dark {
     background-color: var(--color-darkmod);
