@@ -266,7 +266,7 @@ body {
 }
 /*Estilos block contacto*/
 .Contacto{
-    width: 80%;
+    width: 72%;
     background-color: var(--color-secundario);
     border-radius: var(--border-radius);
     padding: 4em;
@@ -278,7 +278,7 @@ body {
 }
 .Contacto-p{
     width: 60%;
-    margin-bottom: 4em;
+    margin-bottom: 8em;
 }
 .Contacto-a{
     margin-top: 1em;

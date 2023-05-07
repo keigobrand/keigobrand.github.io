@@ -251,6 +251,7 @@ display: block;
     line-height: 1.2;
 }
 .Inicio-p{
+    max-width: 35em;
     padding: 1em;
     font-size: var(--text-size-cuerpo-mayor);
     text-align:center;
