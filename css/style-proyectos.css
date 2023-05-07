@@ -1,0 +1,575 @@
+@import url(reset-pro.css);
+/* Variables */
+@import url(variables.css);
+
+body {
+    font-stretch: ubuntu;
+    color: var(--color-text);
+    font-size: var(--size-principal);
+    transition: .3s ease all;
+    font-weight: 400;
+    background: url("../img/keigobrand-fondo.svg") 50% 0% / cover no-repeat;
+
+}
+
+/* Header */
+
+.Header {
+    width: 100%;
+    height: 7.25em;
+    min-height: 7.25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.188em 2.5em;
+    border-bottom: .25em solid var(--color-principal);
+    background-color: var(--color-principal);
+    position: fixed;
+    z-index: 100;
+    color: #fff;
+}
+
+.Header-marca{
+    height: 4.5em;
+    width: 24em;
+
+}
+
+.Header-img {
+    width: 17em;
+    margin: auto 0em;
+}
+
+/*Menu*/
+#actual {
+    background-color: #392562;
+    border-radius: .3em;
+}
+
+#actual:hover {
+    background-color: transparent;
+}
+
+.Header-nav {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.Header-ul {
+    display: flex;
+}
+
+.Header-li {
+    padding: 0em .5em;
+    font-size: var(--text-size-menu);
+    transition: all 0.4s ease;
+}
+
+.Header-a {
+    padding: .2em .5em;
+
+}
+
+.Header-li:hover {
+    color: var(--color-secundario);
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+/*Botones*/
+.Header-btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Botón darkmod */
+.Header-darkmod {
+    width: 2.95em;
+    height: 1.65em;
+    padding: .25em .2em 0em .2em;
+    border: .12em solid var(--color-principal);
+    background-color: var(--color-secundario);
+    border-radius: 1.25em;
+    cursor: pointer;
+    margin: 0em 1em;
+}
+
+.Header-luna {
+    float: left;
+    width: .7em;
+    color: var(--color-principal);
+}
+
+.Header-sol {
+    display: none;
+    float: right;
+    height: 1em;
+    width: 1em;
+
+}
+
+/*Idiomas*/
+.Header-idiomas {
+    display: flex;
+}
+
+.Header-idioma {
+    width: 1.5em;
+    margin: 0em .2em;
+
+}
+
+/*Buscador*/
+.Header-buscador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 11.5em;
+
+}
+
+.Header-buscar-cont {
+    min-width: 10px;
+}
+
+.Header-input {
+    display: none;
+    margin: 0em;
+    height: 1.87em;
+    width: 12.5em;
+    border-radius: var(--border-radius-btn);
+    padding: .5em;
+    font-size: .75em;
+    background-color: #f3f3f3;
+    color: var(--color-text);
+
+}
+
+.Header-lupa {
+    width: 1.87em;
+    height: 100%;
+    float: right;
+    cursor: pointer;
+    color: var(--color-secundario);
+    transition: .1s;
+}
+
+.Header-buscador:hover .Header-input,
+.Header-buscador:focus-within .Header-input {
+    display: block;
+}
+
+
+/* Botón menú */
+.Header-btn {
+    display: none;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: 50%;
+    right: .9em;
+    transform: translate(-50%, -50%) scale(1.2);
+    cursor: pointer;
+}
+
+.Header-line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin-top: 6px;
+    transform-origin: 0px 100%;
+    transition: all 300ms;
+}
+
+.Header-line--line1 {
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.Header-line--line2 {
+    opacity: 0;
+    transform: rotate(-180deg);
+}
+
+.Header-line--line3 {
+    transform: rotate(-45deg) translate(-4px, 2px);
+}
+
+/* Redes */
+.Redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Redes--top {
+    position: fixed;
+    right: 1.8em;
+    top: 9.5em;
+}
+
+.Redes-svg {
+    fill: var(--color-principal);
+}
+
+.Redes-a {
+    margin: 10px 0px;
+}
+
+/* Main-contenido principal */
+.Main {
+    padding-top: 12em;
+
+}
+
+.Contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    background-color: var(--blanco-opacidad);
+    margin: auto auto;
+    border-radius: var(--border-radius);
+    padding: 5.5em 10em;
+}
+
+.Main-separador {
+    background-color: var(--color-principal);
+    height: .188em;
+    width: 100%;
+    margin: 3.75em 0em;
+    border-radius: 1em;
+}
+.Main-separador--subrayado{
+    margin: 1.3em 0em 2em;
+}
+.Section {
+    width: 63.93em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Section--text{
+    width: 32em;
+    text-align: justify;
+    margin-top: 2em;
+}
+.Section-h2,
+.Main-h1 {
+    font-size: var(--text-size-apartados);
+    font-weight: 500;
+    margin-top: 1em;
+}
+
+.Section-h4 {
+    font-size: var(--text-size-destacado);
+    color: var(--color-principal);
+    font-weight: 500;
+    margin:3em 0em 1em;
+}
+.Section-destacado{
+    color: var(--color-principal);
+}
+/*listas*/
+.Section-li:before {
+    content: "\25CF";
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+/*Estilos boton*/
+
+.Documento-btn {
+    display: block;
+    width: 8em;
+    height: 2.5em;
+    border: none;
+    border-radius: 1em;
+    background-color: var(--color-principal);
+    color: var(--blanco);
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    padding-top: .75em;
+}
+
+.Documento-btn:hover {
+    transform: scale(1.1);
+}
+/* Footer-pie de página */
+.Footer {
+    width: 100%;
+    border-top: .18em solid var(--color-principal);
+    display: flex;
+    justify-content: space-between;
+    padding: 2.18em 2.5em;
+    background-color: #ffffff;
+    z-index: 8;
+    margin-top: 6em;
+}
+
+.Footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.Footer-a {
+    margin-left: 2em;
+}
+
+/*.Footer-botom{
+
+}
+.Footer-copy{
+
+}*/
+
+/*responsive-adaptacion a dispositivos*/
+
+@media screen and (max-width:1424px) {
+    body {
+        background-position: 50% 0%;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .Section {
+        width: 99%;
+    }
+
+    .Contenedor {
+        width: 90%;
+        padding: 2em 5em;
+    }
+    /*menu responsive*/
+    .Header-btn {
+        display: block;
+    }
+
+    .Header {
+        padding: 1.25em 1.56em;
+    }
+
+    .Header-nav {
+        position: absolute;
+        top: 7em;
+        right: 0em;
+        display: none;
+        flex-direction: column;
+        justify-content: left;
+        align-items: center;
+        width: 13.7em;
+        min-height: 26.6em;
+        background-color: var(--color-principal);
+        padding: 2em .6em 8.35em .6em;
+    }
+
+    .Header-nav.active {
+        display: flex;
+    }
+
+    .dark .menu {
+        background-color: var(--color-darkmod);
+        outline: .12em solid var(--color-principal);
+    }
+
+    .Header-ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-bottom: 1.25em;
+    }
+
+    .Header-li {
+        list-style: none;
+        padding: .6em 0em;
+    }
+
+    .dark .Header-nav {
+        background-color: var(--color-darkmod);
+        border: .15em solid var(--color-principal);
+        border-top: none;
+    }
+
+    .Header-a:hover {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    /*btns responsive*/
+    .Header-btns {
+        position: absolute;
+        top: 23.5em;
+        right: 0em;
+        display: none;
+        flex-direction: column-reverse;
+        align-items: center;
+        min-height: 10.6em;
+        padding: 2.35em .6em;
+    }
+
+    .Header-btns.active {
+        display: flex;
+    }
+
+    .Header-buscador,
+    .Header-darkmod,
+    .Header-idiomas {
+        margin: .5em;
+    }
+
+    .Header-input {
+        display: block;
+    }
+}
+@media screen and (max-width:767px) {
+    .Header-marca{
+        width: 13em;
+        height: 3.5em;
+    }
+
+    .Redes--top {
+        right: .35em;
+        top: 8em;
+    }
+
+    .Redes-svg {
+        width: 85%;
+    }
+
+    .Contenedor {
+        width: 95%;
+        padding: .5em 3em;
+    }
+    .Section--text{
+        width: 100%;
+    }
+    .Section-p{
+        width: 100%;
+    }
+    .Main-h1{
+        text-align: center;
+        line-height: 120%;
+
+    }
+    .Footer {
+        flex-direction: column-reverse;
+    }
+
+    .Footer-botom {
+        margin-top: 2em;
+    }
+
+    .Footer-links {
+        flex-wrap: nowrap;
+        text-align: center;
+        justify-content: space-around;
+    }
+    .Footer-a {
+        margin: 0em .5em;
+
+    }
+}
+
+/*Modo oscuro*/
+/*@media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference)  {
+    body{
+        background-color: var(--color-darkmod);
+        color: #ffff;
+    }
+
+    #header,
+    #footer{
+        color: #ffff;
+        background-color: var(--color-darkmod);
+    }
+
+    #content{
+        background-color: var(--color-secundario-opacidad);
+    }
+
+    .Header-a:hover {
+        color: var(--color-principal);
+    }
+
+    #actual{
+        background-color: #00A263;
+    }
+
+    #lupa{
+        color: var(--color-principal);
+    }
+    @media screen and (max-width:1424px) {
+        .menu {
+            background-color: var(--color-darkmod);
+            outline: .12em solid var(--color-principal);
+        }
+        .Header-nav {
+            background-color: var(--color-darkmod);
+            border: .15em solid var(--color-principal);
+            border-top: none;
+        }
+    }
+    /*switch Dark-mod
+    #switch{
+        border-color: var(--color-principal);
+    }
+
+    #luna{
+        display: none;
+    }
+
+    #sol{
+        display: block;
+        float: right;
+    }
+
+}*/
+
+.dark {
+    background-color: var(--color-darkmod);
+    color: #ffff;
+}
+
+.dark #header,
+.dark #footer{
+    color: #ffff;
+    background-color: var(--color-darkmod);
+}
+
+.dark #content{
+    background-color: var(--color-secundario-opacidad);
+}
+
+.dark .Header-a:hover {
+    color: var(--color-principal);
+}
+
+.dark #actual{
+    background-color: #00A263;
+}
+
+.dark #lupa{
+    color: var(--color-principal);
+}
+
+/*switch Dark-mod*/
+.dark #switch{
+    border-color: var(--color-principal);
+}
+
+.dark #luna{
+    display: none;
+}
+
+.dark #sol{
+    display: block;
+    float: right;
+}
