@@ -42,36 +42,3 @@ for (let i = 0; i < cerrarButton.length; i++) {
     }
 }
 
-/* Modo oscuro
-const switchButton = document.getElementById('switch'),
-    luna = document.getElementById('luna'),
-    sol = document.getElementById('sol'),
-    body = document.getElementById('body'),
-    header = document.getElementById('header'),
-    actual = document.getElementById('actual'),
-    lupa = document.getElementById('lupa'),
-    main = document.getElementById('content'),
-    footer = document.getElementById('footer'),
-    form = document.getElementById('form'),
-    enviar = document.getElementById('enviar'),
-    subir = document.getElementById('input-subir'),
-    servicios = document.getElementById('Servicios');
-
-
-switchButton.addEventListener('click', e =>{
-    document.body.classList.toggle('dark');
-    sol.classList.toggle('dark');
-    luna.classList.toggle('dark');
-    header.classList.toggle('dark');
-    footer.classList.toggle('dark');
-    actual.classList.toggle('dark');
-    lupa.classList.toggle('dark');
-    main.classList.toggle('dark');
-    enviar.classList.toggle('dark');
-    switchButton.classList.toggle('dark');
-    subir.classList.toggle('dark');
-    form.classList.toggle('dark');
-    servicios.classList.toggle('dark');
-    
-
-})*/

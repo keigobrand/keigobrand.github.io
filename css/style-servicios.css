@@ -833,14 +833,16 @@ body {
     #lupa{
         color: var(--color-principal);
     }
-    .dark .menu {
-        background-color: var(--color-darkmod);
-        outline: .12em solid var(--color-principal);
-    }
-    .dark .Header-nav {
-        background-color: var(--color-darkmod);
-        border: .15em solid var(--color-principal);
-        border-top: none;
+    @media screen and (max-width:1424px) {
+        .menu {
+            background-color: var(--color-darkmod);
+            outline: .12em solid var(--color-principal);
+        }
+        .Header-nav {
+            background-color: var(--color-darkmod);
+            border: .15em solid var(--color-principal);
+            border-top: none;
+        }
     }
     /*switch Dark-mod*/
     #switch{

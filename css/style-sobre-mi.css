@@ -384,7 +384,7 @@ body {
         display: flex;
     }
 
-    .header.dark>.menu {
+    .dark .menu {
         background-color: var(--color-darkmod);
         outline: .12em solid var(--color-principal);
     }
@@ -401,7 +401,7 @@ body {
         padding: .6em 0em;
     }
 
-    #header.dark>.Header-nav {
+    .dark .Header-nav {
         background-color: var(--color-darkmod);
         border: .15em solid var(--color-principal);
         border-top: none;
@@ -494,46 +494,97 @@ body {
 }
 
 /*Modo oscuro*/
-@media (prefers-color-scheme: dark) {
-    body.dark {
+@media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
+    body{
         background-color: var(--color-darkmod);
         color: #ffff;
     }
 
-    #header.dark,
-    #footer.dark {
+    #header,
+    #footer{
         color: #ffff;
         background-color: var(--color-darkmod);
     }
 
-    #content.dark {
+    #content{
         background-color: var(--color-secundario-opacidad);
     }
 
-    #header.dark>nav>ul>li>a:hover {
+    .Header-a:hover {
         color: var(--color-principal);
     }
 
-    #actual.dark {
+    #actual{
         background-color: #00A263;
     }
 
-    #lupa.dark {
+    #lupa{
+        color: var(--color-principal);
+    }
+
+    @media screen and (max-width:1424px) {
+        .menu {
+            background-color: var(--color-darkmod);
+            outline: .12em solid var(--color-principal);
+        }
+        .Header-nav {
+            background-color: var(--color-darkmod);
+            border: .15em solid var(--color-principal);
+            border-top: none;
+        }
+    }
+        /*switch Dark-mod*/
+        #switch{
+            border-color: var(--color-principal);
+        }
+    
+        #luna{
+            display: none;
+        }
+    
+        #sol{
+            display: block;
+            float: right;
+        }
+
+}
+    .dark {
+        background-color: var(--color-darkmod);
+        color: #ffff;
+    }
+
+    .dark #header,
+    .dark #footer{
+        color: #ffff;
+        background-color: var(--color-darkmod);
+    }
+
+    .dark #content{
+        background-color: var(--color-secundario-opacidad);
+    }
+
+    .dark .Header-a:hover {
+        color: var(--color-principal);
+    }
+
+    .dark #actual{
+        background-color: #00A263;
+    }
+
+    .dark #lupa{
         color: var(--color-principal);
     }
 
     /*switch Dark-mod*/
-    #switch.dark {
+    .dark #switch{
         border-color: var(--color-principal);
     }
 
-    #luna.dark {
+    .dark #luna{
         display: none;
     }
 
-    #sol.dark {
+    .dark #sol{
         display: block;
         float: right;
     }
-
-}

@@ -537,7 +537,7 @@ display: block;
     }
 
 }*/
-@media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference){
+@media (prefers-color-scheme: dark){
     body{
         background-color: var(--color-darkmod);
         color: #ffff;
@@ -563,20 +563,22 @@ display: block;
     #content{
         background-color: var(--color-secundario-opacidad);
     }
-    .st0{
+    #isotipo>.st0{
         fill: #ffffff;
     }
-    .st1{
+    #logotipo>.st1{
         fill: #ffffff;
     }
-    .dark .menu {
-        background-color: var(--color-darkmod);
-        outline: .12em solid var(--color-principal);
-    }
-    .dark .Header-nav {
-        background-color: var(--color-darkmod);
-        border: .15em solid var(--color-principal);
-        border-top: none;
+    @media screen and (max-width:1424px) {
+        .menu {
+            background-color: var(--color-darkmod);
+            outline: .12em solid var(--color-principal);
+        }
+        .Header-nav {
+            background-color: var(--color-darkmod);
+            border: .15em solid var(--color-principal);
+            border-top: none;
+        }
     }
     /*switch Dark-mod*/
     #switch{
@@ -616,10 +618,10 @@ display: block;
 .dark #content{
     background-color: var(--color-secundario-opacidad);
 }
-.dark .st0{
+.dark #isotipo>.st0{
     fill: #ffffff;
 }
-.dark .st1{
+.dark #logotipo>.st1{
     fill: #ffffff;
 }
 /*switch Dark-mod*/

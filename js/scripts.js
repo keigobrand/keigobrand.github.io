@@ -7,7 +7,7 @@ var line3__bars = document.querySelector(".Header-line3");
 var menu = document.querySelector(".Header-nav");
 var Btns = document.querySelector(".Header-btns");
 
-function animateBars(){
+function animateBars() {
     line1__bars.classList.toggle("Header-line--line1");
     line2__bars.classList.toggle("Header-line--line2");
     line3__bars.classList.toggle("Header-line--line3");
@@ -15,43 +15,34 @@ function animateBars(){
     Btns.classList.toggle("active");
 }
 
-// Trayectoria slider
-/*const formacionButton = document.getElementById('btn--formacion');
-const trabajoButton = document.getElementById('btn--trabajo');
-const trabajo = document.getElementById('div--trabajo');
-const formacion = document.getElementById('div--formacion');
+/*mantener modo socuro o claro */
+let modo=document.getElementById("switch");
+let body=document.body;
 
+modo.addEventListener("click", function(){
+    let val=body.classList.toggle("dark")
+    localStorage.setItem("modo",val)
+})
 
-formacionButton.onclick = function(){
-    trabajo.style.display="none";
-    formacion.style.display="flex";
-    formacionButton.style.color="#BF0417";
-    trabajoButton.style.color="";
-}
+let valor=localStorage.getItem("modo")
 
-trabajoButton.onclick = function(){
-    formacion.style.display="none";
-    trabajo.style.display="flex";
-    formacionButton.style.color="";
-    trabajoButton.style.color="#BF0417";
-    
-}*/
-
-//Contacto popup
-/*const contactoButton = document.getElementById('abrir');
-const cerrarButton = document.getElementById('cerrar');
-const blockContact = document.getElementById('block--contact');
-const contContacto = document.getElementById('cont--abrir');
-
-
-contactoButton.onclick = function(){
-    blockContact.style.display="flex";
-    contContacto.style.display="none";
+if (valor=="true") {
+    body.classList.add("dark")
+} else {
+    body.classList.remove("dark")
 }
 
 
-cerrarButton.onclick = function(){
-    blockContact.style.display="none";
-    contContacto.style.display="flex";
-    
+/*añadido intento modo movil no funciono*/
+/*function toggleModo() {
+    const body = document.body;
+    const val = body.classList.toggle("dark");
+    localStorage.setItem("modo", val);
+}
+
+
+const preferenciaColor = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (localStorage.getItem("modo") === "true" || (localStorage.getItem("modo") === null && preferenciaColor)) {
+    body.classList.add("dark");
 }*/
