@@ -25,3 +25,34 @@
     /* Animaciones */
     --animation: animation--bar 2s alternate ease-out;
 }
+
+/*cookies*/
+
+.cookie-popup {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    z-index: 9999;
+  }
+  
+  .cookie-message {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .cookie-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cookie-button:hover {
+    background-color: #45a049;
+  }
