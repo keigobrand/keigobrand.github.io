@@ -485,6 +485,10 @@ body {
         flex-direction: column;
         width: 80vw;
     }
+    .Section-cont--img{
+        width: 80vw;
+    }
+    
     .Section--text{
         width: 100%;
     }
