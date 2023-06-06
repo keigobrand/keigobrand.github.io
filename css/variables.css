@@ -110,7 +110,7 @@
 @media screen and (max-width:767px){
   .cookie-popup{
     width: 90vw;
-    height: 90vh;
+    height: 50vh;
     flex-direction: column;
 
 }
