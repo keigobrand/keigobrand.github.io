@@ -105,3 +105,13 @@
   .dark .Cookies-h3{
     color: var(--color-principal);
   }
+
+/*responsive*/
+@media screen and (max-width:767px){
+  .cookie-popup{
+    width: 90vw;
+    height: 90vh;
+    flex-direction: column;
+
+}
+}
