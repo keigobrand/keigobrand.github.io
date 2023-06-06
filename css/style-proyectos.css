@@ -483,6 +483,7 @@ body {
         display: flex;
         margin: 3em 0em;
         flex-direction: column;
+        width: 80vw;
     }
     .Section--text{
         width: 100%;
