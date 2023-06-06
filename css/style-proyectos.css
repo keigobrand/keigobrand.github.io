@@ -488,9 +488,10 @@ body {
     .Section-cont--img{
         width: 80vw;
     }
-    
+
     .Section--text{
         width: 100%;
+        padding: 1em;
     }
     .Section-p{
         width: 100%;
