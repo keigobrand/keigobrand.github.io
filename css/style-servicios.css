@@ -885,3 +885,7 @@ body {
 .dark .Popup-h2{
     color: var(--blanco);
 }
+
+.dark .Form-input:focus {
+    border-color: var(--color-secundario);
+}
