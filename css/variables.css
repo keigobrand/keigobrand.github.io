@@ -15,7 +15,7 @@
     --text-size-apartados: 2.5em;
     --text-size-cuerpo: 1em;
     --text-size-destacado: 1.125em;
-    --text-size-cuerpo-mayor: 1.25rem;
+    --text-size-cuerpo-mayor: 20px;
     
     /*Medidas*/
     --border-radius: 2.5em;
@@ -30,29 +30,78 @@
 
 .cookie-popup {
     position: fixed;
-    bottom: 10px;
-    left: 10px;
-    background-color: #f1f1f1;
-    padding: 10px;
-    border-radius: 5px;
+    width: 40em;
+    bottom: .625em;
+    left: .625em;
+    background-color: var(--blanco);
+    padding: 2em;
+    border-radius: var(--border-radius);
     display: none;
     z-index: 9999;
+    align-items: center;
+    box-shadow: var(--color-principal) 1em 1em .8em;
+    
   }
-  
-  .cookie-message {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .cookie-button {
-    background-color: #4CAF50;
-    color: white;
+.Cookies-cont--img{
+  width: fit-content;
+}
+.Cookies-img{
+  width: 10em;
+  height: 10em;
+  margin-right: 3em;
+}
+
+.Cookies-cont--text{
+  width: 25em;
+}
+.Cookies-links{
+  margin-top: 4em;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.Cookies-h3{
+  font-size: var(--text-size-cuerpo-mayor);
+  font-weight: 600;
+  margin-bottom: 2em;
+  color: var(--color-secundario);
+}
+.Cookies-a{
+  color: var(--color-secundario);
+}
+.cookie-message {
+  width: 100%;
+  margin-right: .625em;
+}
+
+.cookie-button {
+  display: block;
+    width: 5em;
+    height: 2em;
     border: none;
-    padding: 8px 12px;
-    border-radius: 4px;
+    border-radius: .7em;
+    background-color: var(--color-principal);
+    color: var(--blanco);
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
     cursor: pointer;
-  }
+}
+
+.cookie-button:hover {
+  transform: scale(1.1);
+}
   
-  .cookie-button:hover {
-    background-color: #45a049;
+  /*dark cookies*/
+  .dark .cookie-popup{
+    background-color: var(--color-secundario);
+  }
+  .dark .Cookies-a{
+    color: var(--color-principal);
+  }
+  .dark .Cookies-img--cls-1{
+    fill: var(--color-principal) !important;
+  }
+  .dark .Cookies-h3{
+    color: var(--color-principal);
   }

@@ -45,7 +45,7 @@
         </nav>
         <div class="Header-btns">
             <div class="Header-buscador">
-                <div class="Header-buscar-cont"><input type="search" placeholder="buscar" class="Header-input"></div>
+                <div id="buscador-cont" class="Header-buscar-cont Buscador-cont"><input id="buscador" type="search" placeholder="buscar" class="Header-input Buscador"></div>
                 <svg class="Header-lupa" id="lupa" xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 96 960 960" width="48"><path d="M796 935 533 672q-30 26-69.959 40.5T378 727q-108.162 0-183.081-75Q120 577 120 471t75-181q75-75 181.5-75t181 75Q632 365 632 471.15 632 514 618 554q-14 40-42 75l264 262-44 44ZM377 667q81.25 0 138.125-57.5T572 471q0-81-56.875-138.5T377 275q-82.083 0-139.542 57.5Q180 390 180 471t57.458 138.5Q294.917 667 377 667Z"/></svg>	
             </div>
             <div id="switch" class="Header-darkmod">
@@ -225,8 +225,19 @@
     </main>
     <!--cookies popup-->
     <div id="cookie-popup" class="cookie-popup">
-        <span class="cookie-message">Utilizamos cookies para mejorar su experiencia en nuestro sitio web. Al continuar navegando, usted acepta nuestro uso de cookies.</span>
-        <button id="accept-cookie" class="cookie-button">Aceptar</button>
+        <div class="Cookies-cont--img"><svg class="Cookies-img" xmlns="http://www.w3.org/2000/svg" width="327.869" height="327.869" viewBox="0 0 327.869 327.869">
+                <defs><style>.Cookies-img--cls-1 {fill: #36195d;}</style></defs>
+                <path id="Trazado_242" data-name="Trazado 242" class="Cookies-img--cls-1" d="M-29.04,464.239A162.861,162.861,0,0,1-144.96,416.224,162.863,162.863,0,0,1-192.975,300.3,162.863,162.863,0,0,1-144.96,184.385,162.861,162.861,0,0,1-29.04,136.37c3.055,0,6.257.094,9.518.281a5.476,5.476,0,0,1,4.208,2.378,5.478,5.478,0,0,1,.687,4.785c-.488,1.5-1.112,3.084-1.772,4.763-1.345,3.419-3.019,7.674-3.019,10.4q0,.64.019,1.275a5.478,5.478,0,0,1-1.546,3.976,5.474,5.474,0,0,1-3.929,1.661h-.06c-12.459.017-20.507,8.419-20.507,21.414a23.243,23.243,0,0,0,23.217,23.217A23.13,23.13,0,0,0-9.8,206.918a5.476,5.476,0,0,1,5.821-.031,5.475,5.475,0,0,1,2.561,5.227,55.171,55.171,0,0,0,54.941,61.05l.152-.005c.145-.006.29-.009.436-.011a5.548,5.548,0,0,1,4.226,1.929,47.26,47.26,0,0,0,66.752,5.346,5.477,5.477,0,0,1,9.009,3.626c.531,5.4.8,10.868.8,16.256A162.86,162.86,0,0,1,86.879,416.224,162.861,162.861,0,0,1-29.04,464.239Zm0-316.916c-84.354,0-152.982,68.627-152.982,152.982S-113.394,453.286-29.04,453.286,123.941,384.658,123.941,300.3q0-2.788-.1-5.6a58.205,58.205,0,0,1-72.145-10.611,66.3,66.3,0,0,1-64.347-63.98,34.155,34.155,0,0,1-9.569,1.365,34.208,34.208,0,0,1-34.17-34.17c0-17.246,10.609-29.786,26.37-32.013a45.579,45.579,0,0,1,2.359-7.964Q-28.357,147.323-29.04,147.323ZM17.188,414.31a43.875,43.875,0,1,1,43.874-43.875A43.925,43.925,0,0,1,17.188,414.31Zm0-76.8a32.922,32.922,0,1,0,32.921,32.922A32.959,32.959,0,0,0,17.188,337.514ZM-93.757,403.89a29.912,29.912,0,0,1-29.878-29.879,29.912,29.912,0,0,1,29.878-29.878A29.912,29.912,0,0,1-63.88,374.012,29.912,29.912,0,0,1-93.757,403.89Zm0-48.8a18.946,18.946,0,0,0-18.924,18.924,18.946,18.946,0,0,0,18.924,18.924,18.946,18.946,0,0,0,18.925-18.924A18.946,18.946,0,0,0-93.757,355.087Zm-4.292-64.222a34.208,34.208,0,0,1-34.17-34.17,34.208,34.208,0,0,1,34.17-34.17A34.208,34.208,0,0,1-63.88,256.7,34.208,34.208,0,0,1-98.049,290.865Zm0-57.386A23.243,23.243,0,0,0-121.266,256.7a23.243,23.243,0,0,0,23.217,23.217A23.244,23.244,0,0,0-74.832,256.7,23.243,23.243,0,0,0-98.049,233.479Z" transform="translate(192.975 -136.37)"/>
+            </svg>
+        </div>
+        <section class="Cookies-cont--text">
+            <h3 class="Cookies-h3" >Esta web emplea cookies</h3>
+            <p class="cookie-message">Utilizo cookies para mejorar su experiencia en nuestro sitio web. Al continuar navegando, usted acepta nuestro uso de cookies. Para saber mas ve a la política de cookies de nuestra web.</p>
+            <div class="Cookies-links" >
+                <a class="Cookies-a" href="cookies.html">Política cookies</a>
+                <button id="accept-cookie" class="cookie-button">Aceptar</button>
+            </div>
+        </section>
     </div>
     <footer id="footer" class="Footer">
         

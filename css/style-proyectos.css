@@ -282,6 +282,26 @@ body {
     margin-right: 5px;
     font-size: 1.2em;
 }
+
+/*Proyectos*/
+.Section--cont{
+    display: flex;
+    margin: 3em 0em;
+    justify-content: start;
+}
+.Section-text{
+    width: fit-content;
+    margin: 0em 2em;
+    text-align: justify;
+}
+.Section-h4{
+    margin-top: 1.5em;
+}
+.Section-img{
+    width: 45em;
+    height: 20em;
+    background-color: aquamarine;
+}
 /*Estilos boton*/
 
 .Section-btn {
