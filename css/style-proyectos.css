@@ -487,11 +487,11 @@ body {
     }
     .Section-cont--img{
         width: 80vw;
+        margin-top: 2em;
     }
 
     .Section--text{
         width: 100%;
-        padding: 1em;
     }
     .Section-p{
         width: 100%;
