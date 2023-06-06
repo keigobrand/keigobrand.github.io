@@ -479,6 +479,11 @@ body {
         width: 95%;
         padding: .5em 3em;
     }
+    .Section--cont{
+        display: flex;
+        margin: 3em 0em;
+        flex-direction: column;
+    }
     .Section--text{
         width: 100%;
     }
@@ -507,6 +512,8 @@ body {
         margin: 0em .5em;
 
     }
+
+
 }
 
 /*Modo oscuro*/
