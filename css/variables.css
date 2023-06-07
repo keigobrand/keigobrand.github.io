@@ -115,10 +115,14 @@
 
 }
 .Cookies-cont--text{
+  margin: 0em;
   margin-top: 2em;
   width: 80%;
 }
 .Cookies-links{
   flex-direction: column;
+}
+.cookie-button{
+  margin-top: 1em;
 }
 }
