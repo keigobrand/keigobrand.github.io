@@ -488,6 +488,8 @@ body {
     .Section-cont--img{
         width: 80vw;
         margin-top: 2em;
+        border-radius: var(--border-radius);
+        overflow: hidden;
     }
 
     .Section--text{
