@@ -302,10 +302,12 @@ body {
     height: 25em;
     overflow: hidden;
     text-align: center;
+    border-radius: var(--border-radius);
 }
 .Section-img{
     object-fit:cover;
     height: 100%;
+
 }
 
 /*Estilos boton*/
@@ -488,8 +490,6 @@ body {
     .Section-cont--img{
         width: 80vw;
         margin-top: 2em;
-        border-radius: var(--border-radius);
-        overflow: hidden;
     }
 
     .Section--text{
